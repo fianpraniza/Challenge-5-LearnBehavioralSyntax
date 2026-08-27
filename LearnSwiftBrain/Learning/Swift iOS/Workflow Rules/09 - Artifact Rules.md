@@ -1,77 +1,87 @@
 # Artifact Rules
 
 ## Purpose
-Artifact adalah bukti belajar konkret. Bisa berupa snippet, exercise, prototype, working app, README, screenshot, demo video, atau Obsidian artifact note.
+Artifact adalah bukti belajar konkret dari proses rebuild **Tiempo iOS**.
 
-Targetnya bukan langsung bikin app keren, tapi meninggalkan evidence bahwa Fian memahami dan mencoba konsep.
+Dalam workflow baru ini, artifact bukan kumpulan exercise random. Artifact harus lahir dari:
+
+```text
+Original Tiempo macOS behavior → iOS rebuild slice → hands-on code → observation → working/verified behavior
+```
+
+Targetnya bukan langsung bikin app keren atau full parity dengan macOS app. Targetnya adalah meninggalkan evidence bahwa Fian memahami behavior code dan bisa membangun ulang bagian app secara manual/programmatic.
 
 ## Core Principle
-> Artifact mengikuti topik yang Fian pilih, bukan memaksa path tertentu.
+> Artifact mengikuti proses rebuild Tiempo iOS, bukan memaksa app unrelated atau checklist Swift general.
 
-Fian tidak harus mengikuti satu app besar dari Day 1. Kalau topik hari itu Functions, artifact bisa berupa exercise logic. Kalau topiknya SwiftUI State, artifact bisa berupa Counter App kecil.
+Guiding questions dan artifact harus app-oriented. Reference Bank boleh dipakai saat perlu memahami konsep pendukung, tapi artifact utama tetap terkait rebuild app.
 
-## Artifact Levels
-### Level 1 — Code snippet / exercise
-Untuk fundamental awal.
+## Rebuild Artifact Levels
+
+### Level 1 — Behavior snippet / experiment
+Untuk menjawab satu guiding question kecil dari rebuild.
 
 Examples:
-- function exercise,
-- optional unwrapping,
-- struct model,
-- array filtering.
+- enum `HomePracticeState` dengan computed `title`/`buttonTitle`,
+- button action yang mengubah state,
+- simple timer value yang update UI,
+- function transform `PracticeResult → RecapSummary`.
 
 Evidence:
-- file `.swift`,
-- screenshot output,
-- Obsidian daily log.
+- Swift snippet/file,
+- observation note,
+- screenshot kalau UI berubah,
+- explanation: code → behavior.
 
-### Level 2 — Mini prototype
-Untuk SwiftUI awal.
+### Level 2 — Rebuild slice prototype
+Untuk satu behavior slice yang bisa dicoba di iOS.
 
 Examples:
-- counter view,
-- profile card,
-- form validation,
-- simple list,
-- color/theme picker.
+- Home screen changes based on state,
+- Start Practice button changes app state,
+- Practice timer screen,
+- Pause/resume/stop flow,
+- simple recap screen.
 
 Evidence:
-- Xcode project/file,
-- screenshot simulator,
-- artifact note.
+- Xcode app screen,
+- manual test checklist,
+- short execution trace,
+- link to active guiding questions.
 
-### Level 3 — Small working app
-Untuk beberapa konsep yang sudah nyambung.
+### Level 3 — Small working iOS rebuild
+Gabungan beberapa slices menjadi app flow kecil.
 
-Examples:
-- todo app,
-- habit tracker,
-- study timer,
-- flashcard app,
-- mini journal app.
+Example MVP flow:
+```text
+Home → Practice Timer → Stop → Recap
+```
 
 Evidence:
 - build/run verified,
-- README,
-- screenshots,
-- list fitur,
-- manual vs AI contribution.
+- main flow works without crash,
+- README or artifact note,
+- manual vs AI contribution,
+- known limitations.
 
-### Level 4 — Showcase artifact
-Untuk akhir/phase advanced.
+### Level 4 — Showcase rebuild artifact
+Versi yang dipoles untuk dipamerkan.
 
-Examples:
-- polished app kecil,
-- portfolio README,
-- demo video,
-- app writeup,
-- before/after reflection.
+Includes:
+- app name/use case,
+- screenshots/demo,
+- feature list,
+- explanation of behavior/code mechanics,
+- what was rebuilt from the macOS app,
+- what was intentionally deferred,
+- how to run,
+- future improvements.
 
 ## Definition of Working
 Artifact disebut working kalau:
 - project/build bisa dijalankan, atau
-- playground/script menghasilkan output benar, atau
-- simulator/app membuka flow utama tanpa crash.
+- simulator/app membuka flow utama tanpa crash, atau
+- behavior slice menghasilkan output/visual response yang sesuai.
 
 Kalau belum bisa verify:
 ```text
@@ -79,8 +89,11 @@ Status: implemented, not verified
 Reason: belum dites di simulator / Xcode unavailable / build error belum selesai
 ```
 
+Do not claim working without verification.
+
 ## Manual Contribution Rule
 Setiap artifact harus jelas:
+
 ```markdown
 ## What I built manually
 - ...
@@ -91,126 +104,146 @@ Setiap artifact harus jelas:
 - Curator formatted notes ...
 ```
 
-## Codex Usage for Artifacts
+Ini penting karena artifact adalah evidence belajar, bukan sekadar output AI.
+
+## Codex Usage for Rebuild Artifacts
 Codex boleh bantu:
-- scaffold awal,
-- README,
-- mock data,
-- fix build error,
-- refactor setelah jalan,
-- polish ringan,
-- test/helper,
+- review kode manual Fian,
+- debug build/error,
+- scaffold minimal dengan TODO,
+- refactor setelah behavior bekerja,
+- README/demo notes,
+- helper/test ringan,
 - explain file structure.
 
 Codex jangan:
-- implement core learning logic dari nol,
-- bikin full app lengkap tanpa Fian menulis manual,
-- over-architect project,
-- tambah fitur advanced tanpa alasan.
+- implement core rebuild slice dari nol tanpa diminta,
+- bikin full Tiempo iOS app lengkap,
+- copy architecture macOS app mentah-mentah,
+- over-architect dengan MVVM/router/DI sebelum Fian memilih itu sebagai topik,
+- menambahkan fitur macOS-specific ke MVP.
 
 ## Artifact Cadence
-- Setiap sesi: minimal small evidence kalau memungkinkan.
-- Setiap 3–5 hari: mini prototype / small app increment kalau masuk akal.
-- Akhir 15 hari: pilih satu artifact untuk dipoles jadi showcase.
+- Setiap sesi: idealnya ada small evidence dari active rebuild question.
+- Setiap 2–4 sesi: satu rebuild slice prototype mulai terlihat.
+- Akhir 15 hari: pilih satu working flow untuk dipoles jadi showcase.
 
-Hari yang cuma fokus konsep susah tetap valid.
+Hari yang hanya fokus memahami source app atau execution mechanics tetap valid, asal ada observation/learning note.
+
+## Main Rebuild Artifact Direction
+Working title:
+```text
+Tiempo iOS Rebuild
+```
+
+Target MVP:
+```text
+Home screen
+→ Start Practice
+→ Timer runs
+→ Pause/Resume/Stop
+→ Recap screen
+```
+
+Later additions if ready:
+- manual/simulated WPM,
+- speech recognition,
+- audio recording,
+- history persistence,
+- SwiftData,
+- better recap UI.
+
+Deferred:
+- Keynote automation,
+- AppleScript / Apple Events,
+- AppKit floating overlay,
+- macOS window management,
+- full speech/audio pipeline from day one,
+- complex SwiftData migration.
+
+## Artifact Note Template
+```markdown
+# Artifact - [Slice/App Name]
+
+## Status
+Not started / In progress / Working / Polished / Not verified
+
+## Source Behavior
+Original repo files / behavior being rebuilt:
+-
+
+## iOS Rebuild Behavior
+-
+
+## Guiding Questions Used
+- [[...]]
+
+## What I Built Manually
+-
+
+## AI Help Used
+-
+
+## Execution Mechanics Learned
+-
+
+## Working Behaviors
+-
+
+## How to Run / Verify
+-
+
+## Screenshots / Demo
+-
+
+## Known Limitations
+-
+
+## Next Improvement
+-
+```
 
 ## Showcase Criteria
-Artifact yang mau dipamerkan minimal punya:
-- nama app/prototype,
-- problem/use case sederhana,
-- fitur utama,
-- konsep Swift/iOS yang dipraktikkan,
-- screenshot/demo,
-- status working,
-- cara run,
-- known limitations,
-- next improvement.
-
-Optional:
-- README,
-- short demo script,
-- Obsidian writeup,
-- before/after learning reflection.
-
-## Artifact Idea Bank
-### Swift basic
-- Unit Converter Logic
-- Simple Grade Calculator
-- Fish/Shrimp Counter Logic
-- Expense Splitter Logic
-
-### Optionals/Form
-- Profile Form Validator
-- Login Input Validator
-- Optional Data Display Card
-
-### Arrays/Dictionaries
-- Todo Data Logic
-- Inventory List
-- Shrimp Seed Batch Tracker
-- Favorite Fish Species List
-
-### SwiftUI State
-- Counter App
-- Mood Tracker
-- Study Timer Start/Stop
-- Feeding Schedule Toggle
-
-### Lists/Navigation
-- Todo App
-- Habit Tracker
-- Aquarium/Fish Log
-- Academy Task Tracker
-
-### Persistence
-- Mini Journal
-- Habit Tracker with local storage
-- Learning Log App
-
-### API
-- Weather App
-- Fish Species Info Fetcher
-- Quote/Fact App
-
-### Final Showcase Possibilities
-- Study Sprint Tracker
-- Habit Tracker
-- Shrimp Seed Counter companion app mockup
-- Academy Challenge Tracker
-- Personal Learning Journal App
+A showcase rebuild artifact should answer:
+- What original macOS behavior inspired this?
+- What did Fian rebuild in iOS?
+- What user action changes what state/data?
+- How does UI update from that state/data?
+- What was built manually?
+- What did AI help with?
+- What is working and verified?
+- What is intentionally deferred?
 
 ## Done Criteria
 ### Level 1 done
-- File/snippet exists.
-- Runs or logic is explained.
-- Concept practiced is clear.
+- One behavior question answered.
+- Code/snippet exists.
+- Observation is written.
 
 ### Level 2 done
-- UI appears.
-- Basic interaction works.
-- Screenshot or note exists.
+- One rebuild slice works visually or behaviorally.
+- Manual test checklist exists.
+- Execution trace is explainable.
 
 ### Level 3 done
-- Main flow works.
+- Main mini flow works in simulator/device.
 - Build/run verified.
 - Artifact note exists.
 - Manual vs AI contribution clear.
 
 ### Level 4 done
 - Polished enough to show.
-- README/writeup.
-- Screenshot/demo.
-- Known limitations.
-- Next improvement.
+- README/writeup/screenshots/demo.
+- Execution mechanics can be explained.
+- Known limitations and deferred features are clear.
 
 ## Anti-patterns
 Artifact workflow jangan:
-- Memaksa app besar dari awal.
-- Membuat Fian copy-paste full Codex app.
-- Mengorbankan pemahaman demi tampilan keren.
-- Menunggu sempurna baru dicatat.
-- Klaim working tanpa build/run.
-- Membuat semua artifact terlalu formal.
-- Membuat repo/project terlalu banyak sampai bingung.
-- Lompat ke architecture advanced demi portfolio.
+- balik jadi exercise random yang tidak nyambung ke Tiempo iOS,
+- memaksa full macOS parity,
+- copy-paste full Codex app,
+- mengorbankan pemahaman demi tampilan keren,
+- klaim working tanpa build/run,
+- membuat semua artifact terlalu formal,
+- lompat ke architecture advanced demi portfolio,
+- memasukkan Keynote automation/floating overlay terlalu awal.

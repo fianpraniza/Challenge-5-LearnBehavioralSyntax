@@ -73,8 +73,10 @@ Error - Index Out of Range.md
 
 ### Artifact Notes
 ```text
-Artifact - Counter App.md
-Artifact - Todo App.md
+Artifact - Tiempo iOS Rebuild Orientation.md
+Artifact - Home State Behavior.md
+Artifact - Practice Timer Slice.md
+Artifact - Recap Model Slice.md
 ```
 
 ## Daily Log Template
