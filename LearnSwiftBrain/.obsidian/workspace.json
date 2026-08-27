@@ -1,0 +1,221 @@
+{
+  "main": {
+    "id": "ae44018945a83bf7",
+    "type": "split",
+    "children": [
+      {
+        "id": "ae26d2e3bb6e9380",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d6ad987b1c656864",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Learning/Swift iOS/Index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Index"
+            }
+          },
+          {
+            "id": "61263231c87b26fa",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7deabb8a1f68712d",
+    "type": "split",
+    "children": [
+      {
+        "id": "7882f913ee221b04",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3d88cded62307041",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "a5d76aad277f78d8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "e4c54a9b605e22e2",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "2cdbb82cd03d30e0",
+    "type": "split",
+    "children": [
+      {
+        "id": "0c580206c486e415",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "245e29a532234e50",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "9c9a95fb8018a600",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "46d1632e7baf4913",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "81663d9f1c6c63af",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "7cafae7c47828278",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "61263231c87b26fa",
+  "lastOpenFiles": [
+    "Learning/Swift iOS/Index.md",
+    "Learning/Swift iOS/Workflow Rules/01 - Swift iOS Mentor.md",
+    "Learning/Swift iOS/Workflow Rules/05 - Role Routing Rules.md",
+    "Learning/Swift iOS/Workflow Rules/02 - Codex Pair Programmer.md",
+    "Learning/Swift iOS/Workflow Rules/03 - Obsidian Knowledge Curator.md",
+    "Learning/Swift iOS/Workflow Rules/00 - Overview.md",
+    "Welcome.md",
+    "Learning/Swift iOS/Artifacts",
+    "Learning/Swift iOS/Errors & Fixes",
+    "Learning/Swift iOS/Concepts",
+    "Learning/Swift iOS/Daily Logs",
+    "Learning/Swift iOS/Workflow Rules/09 - Artifact Rules.md",
+    "Learning/Swift iOS/Workflow Rules/08 - Learning Session Protocol.md",
+    "Learning/Swift iOS/Workflow Rules/07 - Obsidian Second Brain Rules.md",
+    "Learning/Swift iOS/Workflow Rules/06 - Manual Coding Constraint.md",
+    "Learning/Swift iOS/Workflow Rules/04 - Learning Coach.md",
+    "Learning/Swift iOS/Workflow Rules",
+    "Learning/Swift iOS",
+    "Learning"
+  ]
+}
