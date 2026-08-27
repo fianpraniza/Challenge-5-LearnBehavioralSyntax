@@ -99,6 +99,7 @@ Key files:
 - `07 - Obsidian Second Brain Rules.md`
 - `08 - Learning Session Protocol.md`
 - `09 - Artifact Rules.md`
+- `10 - Cara Main Belajar dengan Hermes.md`
 
 ### Active rebuild guiding questions
 Use these first when planning learning sessions:

@@ -48,6 +48,7 @@ Tidak ada MVVM/Clean Architecture/Coordinator/DI secara default. Architecture me
 - [[07 - Obsidian Second Brain Rules]] — aturan catatan, naming, templates, approval.
 - [[08 - Learning Session Protocol]] — alur harian/sesi belajar.
 - [[09 - Artifact Rules]] — aturan artifact/prototype/showcase.
+- [[10 - Cara Main Belajar dengan Hermes]] — best practice cara belajar harian: brief, task, manual coding, stuck handling, review, dan catatan.
 
 ## How to Use These Files with AI Agents
 Attach file sesuai kebutuhan:

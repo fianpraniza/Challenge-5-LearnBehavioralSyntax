@@ -37,6 +37,7 @@ Start → Scope → Learn → Manual Code → Stuck Handling → Review/Debug �
 - [[Workflow Rules/07 - Obsidian Second Brain Rules]]
 - [[Workflow Rules/08 - Learning Session Protocol]]
 - [[Workflow Rules/09 - Artifact Rules]]
+- [[Workflow Rules/10 - Cara Main Belajar dengan Hermes]]
 
 ## Guiding Questions
 - [[Guiding Questions/00 - Guiding Questions Index]]
