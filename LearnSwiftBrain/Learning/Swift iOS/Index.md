@@ -38,6 +38,11 @@ Start → Scope → Learn → Manual Code → Stuck Handling → Review/Debug �
 - [[Workflow Rules/08 - Learning Session Protocol]]
 - [[Workflow Rules/09 - Artifact Rules]]
 
+## Guiding Questions
+- [[Guiding Questions/00 - Guiding Questions Index]]
+
+Guiding Questions berisi mini milestone eksplorasi untuk memahami execution mechanics Swift/iOS: bagaimana kode dieksekusi, state berubah, UI update, dan app berjalan dari awal sampai akhir.
+
 ## Learning Areas
 ### Daily Logs
 Catatan sesi/hari belajar. Lihat folder [[Daily Logs]].

@@ -3,26 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 110;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXFileReference section */
 		134D88F1303F478100BAAEFD /* Challenge5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenge5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		134D88F3303F478100BAAEFD /* Challenge5 */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Challenge5;
-			sourceTree = "<group>";
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1379EE7F303FD2AA00AD2A64 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Apps/.gitkeep,
+				Exercises/.gitkeep,
+				Playgrounds/.gitkeep,
+				Resources/.gitkeep,
+			);
+			target = 134D88F0303F478100BAAEFD /* Challenge5 */;
 		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		134D88F3303F478100BAAEFD /* Challenge5 */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (1379EE7F303FD2AA00AD2A64 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Challenge5; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		134D88EE303F478100BAAEFD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -56,6 +67,8 @@
 			);
 			buildRules = (
 			);
+			dependencies = (
+			);
 			fileSystemSynchronizedGroups = (
 				134D88F3303F478100BAAEFD /* Challenge5 */,
 			);
@@ -71,15 +84,16 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 2700;
-				LastUpgradeCheck = 2700;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					134D88F0303F478100BAAEFD = {
-						CreatedOnToolsVersion = 27.0;
+						CreatedOnToolsVersion = 26.0;
 					};
 				};
 			};
 			buildConfigurationList = 134D88EC303F478100BAAEFD /* Build configuration list for PBXProject "Challenge5" */;
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -88,7 +102,6 @@
 			);
 			mainGroup = 134D88E8303F478100BAAEFD;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 134D88F2303F478100BAAEFD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -101,21 +114,25 @@
 /* Begin PBXResourcesBuildPhase section */
 		134D88EF303F478100BAAEFD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		134D88ED303F478100BAAEFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		134D88FA303F478200BAAEFD /* Debug configuration for PBXProject "Challenge5" */ = {
+		134D88FA303F478200BAAEFD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -168,7 +185,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -179,7 +196,7 @@
 			};
 			name = Debug;
 		};
-		134D88FB303F478200BAAEFD /* Release configuration for PBXProject "Challenge5" */ = {
+		134D88FB303F478200BAAEFD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +243,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -236,7 +253,7 @@
 			};
 			name = Release;
 		};
-		134D88FD303F478200BAAEFD /* Debug configuration for PBXNativeTarget "Challenge5" */ = {
+		134D88FD303F478200BAAEFD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -269,7 +286,7 @@
 			};
 			name = Debug;
 		};
-		134D88FE303F478200BAAEFD /* Release configuration for PBXNativeTarget "Challenge5" */ = {
+		134D88FE303F478200BAAEFD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -308,21 +325,22 @@
 		134D88EC303F478100BAAEFD /* Build configuration list for PBXProject "Challenge5" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				134D88FA303F478200BAAEFD /* Debug configuration for PBXProject "Challenge5" */,
-				134D88FB303F478200BAAEFD /* Release configuration for PBXProject "Challenge5" */,
+				134D88FA303F478200BAAEFD /* Debug */,
+				134D88FB303F478200BAAEFD /* Release */,
 			);
+			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		134D88FC303F478200BAAEFD /* Build configuration list for PBXNativeTarget "Challenge5" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				134D88FD303F478200BAAEFD /* Debug configuration for PBXNativeTarget "Challenge5" */,
-				134D88FE303F478200BAAEFD /* Release configuration for PBXNativeTarget "Challenge5" */,
+				134D88FD303F478200BAAEFD /* Debug */,
+				134D88FE303F478200BAAEFD /* Release */,
 			);
+			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
 	rootObject = 134D88E9303F478100BAAEFD /* Project object */;
-	validationLevel = 1;
 }
