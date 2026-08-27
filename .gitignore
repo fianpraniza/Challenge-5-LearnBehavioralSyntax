@@ -21,9 +21,9 @@ DerivedData/
 Package.resolved
 
 # Obsidian local workspace/cache
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
-.obsidian/cache/
+**/.obsidian/workspace.json
+**/.obsidian/workspace-mobile.json
+**/.obsidian/cache/
 
 # Editor/IDE
 .vscode/
