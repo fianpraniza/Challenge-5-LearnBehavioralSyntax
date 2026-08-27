@@ -13,30 +13,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Learning/Swift iOS/Guiding Questions/Active Rebuild Questions/01 - Slice 1 - App Launch to First Screen.md",
+                "file": "Learning/Swift iOS/Guiding Questions/Active Rebuild Questions/02 - Slice 2 - Home State Drives UI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 - Slice 1 - App Launch to First Screen"
+              "title": "02 - Slice 2 - Home State Drives UI"
             }
           },
           {
             "id": "61263231c87b26fa",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Learning/Swift iOS/Guiding Questions/Active Rebuild Questions/03 - Slice 3 - Button Action Routes Behavior.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "03 - Slice 3 - Button Action Routes Behavior"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -200,15 +195,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "61263231c87b26fa",
+  "active": "d6ad987b1c656864",
   "lastOpenFiles": [
-    "Learning/Swift iOS/Guiding Questions/Active Rebuild Questions/02 - Slice 2 - Home State Drives UI.md",
     "Learning/Swift iOS/Guiding Questions/Active Rebuild Questions/01 - Slice 1 - App Launch to First Screen.md",
     "Learning/Swift iOS/Guiding Questions/Active Rebuild Questions/00 - Tiempo iOS Rebuild Questions.md",
+    "Learning/Swift iOS/Guiding Questions/Active Rebuild Questions/02 - Slice 2 - Home State Drives UI.md",
+    "Learning/Swift iOS/Guiding Questions/Active Rebuild Questions/03 - Slice 3 - Button Action Routes Behavior.md",
     "Learning/Swift iOS/Artifacts/App Rebuild Orientation - Tiempo iOS.md",
     "Learning/Swift iOS/Guiding Questions/Active Rebuild Questions/05 - Slice 5 - Recap Model.md",
     "Learning/Swift iOS/Guiding Questions/Active Rebuild Questions/04 - Slice 4 - Practice Session State.md",
-    "Learning/Swift iOS/Guiding Questions/Active Rebuild Questions/03 - Slice 3 - Button Action Routes Behavior.md",
     "Learning/Swift iOS/Guiding Questions/Active Rebuild Questions",
     "Learning/Swift iOS/Guiding Questions/Reference Bank/12 - Artifact Explanation.md",
     "Learning/Swift iOS/Guiding Questions/Reference Bank/11 - Debugging Mechanics.md",

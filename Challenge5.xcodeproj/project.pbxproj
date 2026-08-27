@@ -10,21 +10,8 @@
 		134D88F1303F478100BAAEFD /* Challenge5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenge5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		1379EE7F303FD2AA00AD2A64 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Apps/.gitkeep,
-				Exercises/.gitkeep,
-				Playgrounds/.gitkeep,
-				Resources/.gitkeep,
-			);
-			target = 134D88F0303F478100BAAEFD /* Challenge5 */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		134D88F3303F478100BAAEFD /* Challenge5 */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (1379EE7F303FD2AA00AD2A64 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Challenge5; sourceTree = "<group>"; };
+		134D88F3303F478100BAAEFD /* Challenge5 */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Challenge5; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */

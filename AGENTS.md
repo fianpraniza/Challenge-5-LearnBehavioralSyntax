@@ -2,9 +2,16 @@
 
 ## Project Context
 
-This repository is Fian's Swift/iOS learning workspace for learning Swift and iOS fundamentals toward advanced topics through hands-on practice.
+This repository is Fian's Swift/iOS learning workspace for rebuilding a previously AI-built macOS app into an iOS app as a learning project.
+
+The current learning target is **behavior-of-code / execution-mechanics driven Swift**:
+- understand how Swift syntax behaves at compile-time and runtime,
+- understand how an iOS app executes from entry point to UI updates,
+- rebuild app behavior through explicit programmatic Swift/SwiftUI code,
+- use the previous macOS app as the source of behavior slices and guiding questions.
 
 The workflow is intentionally:
+- app-rebuild oriented,
 - fundamentals-first,
 - manual-first,
 - flexible rather than rigid-roadmap driven,
@@ -12,6 +19,27 @@ The workflow is intentionally:
 - architecture-neutral at the start.
 
 Do not force MVVM, Clean Architecture, Coordinator, dependency injection, or advanced architecture patterns unless Fian explicitly chooses architecture/refactoring as the learning topic.
+
+## Current Rebuild Source
+
+Original app repository:
+
+```text
+https://github.com/sandeeffendi/keynote-companion-macos.git
+```
+
+Original app:
+**Tiempo / Keynote Companion macOS** — a macOS public-speaking coach.
+
+Rebuild direction:
+**Tiempo iOS Rebuild** — an iOS reinterpretation focused on presentation-practice behavior, not a 1:1 macOS clone.
+
+Defer macOS-specific features unless explicitly chosen later:
+- Keynote automation,
+- AppleScript / Apple Events,
+- AppKit floating overlay/window management,
+- full speech/audio pipeline from day one,
+- complex SwiftData migration.
 
 ## Important Paths
 
@@ -23,6 +51,28 @@ Challenge5/
 ```
 
 The Xcode project uses a filesystem-synchronized root group pointing to this folder.
+
+### App code structure
+The Xcode-visible app folder should stay focused on iOS app source, not general learning notes.
+
+Current lightweight structure:
+
+```text
+Challenge5/
+  Challenge5App.swift
+  ContentView.swift
+  Assets.xcassets/
+  App/
+  Features/
+  Core/
+```
+
+Folder intent:
+- `App/` — entry/root-level flow such as `RootView.swift` when needed.
+- `Features/` — behavior-oriented app areas such as Home, Practice, Recap.
+- `Core/` — shared models/utilities only when reuse is real.
+
+Do not create empty View/ViewModel/Model/Router folders by default. Keep code simple until the behavior demands structure.
 
 ### Obsidian vault
 Learning notes and workflow rules live under:
@@ -50,17 +100,33 @@ Key files:
 - `08 - Learning Session Protocol.md`
 - `09 - Artifact Rules.md`
 
-A backup copy also exists at:
+### Active rebuild guiding questions
+Use these first when planning learning sessions:
 
 ```text
-Challenge5/Resources/ObsidianWorkflowRulesDraft/
+LearnSwiftBrain/Learning/Swift iOS/Guiding Questions/Active Rebuild Questions/
+```
+
+Reference-bank questions live under:
+
+```text
+LearnSwiftBrain/Learning/Swift iOS/Guiding Questions/Reference Bank/
+```
+
+Reference Bank is not a required checklist. Use it only when an active rebuild slice needs that concept.
+
+### App rebuild orientation note
+Main orientation note:
+
+```text
+LearnSwiftBrain/Learning/Swift iOS/Artifacts/App Rebuild Orientation - Tiempo iOS.md
 ```
 
 ## Role Routing
 
 Use the role matching the user's request:
 
-- Swift/iOS Mentor: concepts, technical explanations, errors, debugging explanation.
+- Swift/iOS Mentor: concepts, technical explanations, errors, execution mechanics.
 - Learning Coach: scope, pacing, overwhelm, next steps, time/energy-based planning.
 - Codex Pair Programmer: scaffold, review, debug, refactor, build/project help.
 - Obsidian Knowledge Curator: daily logs, concept notes, error notes, artifact notes.
@@ -81,9 +147,9 @@ AI help should escalate gradually:
 hint → pseudocode → minimal snippet → minimal patch → full solution only if requested/stuck/boilerplate
 ```
 
-For fundamental exercises:
-- Do not implement the entire solution immediately.
-- Prefer hints, TODOs, minimal snippets, and review.
+For core learning slices:
+- Do not implement the entire behavior immediately.
+- Prefer guiding questions, hints, TODOs, minimal snippets, and review.
 - If giving a full reference solution, tell Fian to rewrite it manually instead of copy-pasting.
 
 ## Codex / Coding Agent Rules
@@ -113,6 +179,8 @@ Obsidian should capture:
 - concepts learned,
 - hands-on attempts,
 - errors and fixes,
+- app behavior slices,
+- execution-mechanics observations,
 - artifact progress,
 - what Fian built manually,
 - AI help used,
@@ -121,15 +189,27 @@ Obsidian should capture:
 
 Do not dump full chat logs or generic AI summaries into Obsidian.
 
+## Guiding Question Rule
+
+Guiding questions should primarily come from the app being rebuilt.
+
+Preferred flow:
+
+```text
+Original app behavior → iOS rebuild slice → guiding question → hands-on experiment → observation → note/artifact
+```
+
+Use Active Rebuild Questions first. Use Reference Bank only as supporting material.
+
 ## Artifact Rules
 
-Artifacts should follow Fian's chosen topic, not force a predetermined app path.
+Artifacts should follow the Tiempo iOS rebuild, not force unrelated exercise apps.
 
 Artifact levels:
-1. snippet / exercise,
+1. behavior snippet / experiment,
 2. mini prototype,
-3. small working app,
-4. showcase artifact.
+3. small working iOS slice,
+4. showcase rebuild artifact.
 
 Track clearly:
 - what Fian built manually,
@@ -146,7 +226,7 @@ Start → Scope → Learn → Manual Code → Stuck Handling → Review/Debug �
 
 Keep sessions lightweight:
 - ask at most 3 opening questions when context is unclear,
-- define focus, scope, hands-on task, and done criteria,
+- define active rebuild slice, guiding question, hands-on task, and done criteria,
 - allow pivots,
 - reset without guilt after gaps,
 - scale to Fian's available time and energy.

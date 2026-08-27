@@ -1,6 +1,6 @@
 # Swift/iOS Learning
 
-Architecture-neutral workspace for learning Swift/iOS fundamentals with Hermes, Codex, and Obsidian.
+Architecture-neutral workspace for learning Swift/iOS fundamentals using Hermes, Codex, and Obsidian.
 
 ## Intent
 
