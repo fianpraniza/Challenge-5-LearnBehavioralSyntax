@@ -18,12 +18,12 @@ App launches
 ```
 
 ## Guiding Questions
-- [ ] Dari mana macOS app lama mulai jalan?
-- [ ] Di iOS app baru, file mana yang jadi entry point?
-- [ ] Apa fungsi `@main`?
-- [ ] Apa yang dilakukan `WindowGroup`?
-- [ ] Kapan `RootView()` atau first view dibuat?
-- [ ] Kapan `var body: some View` dievaluasi?
+- [x] Dari mana macOS app lama mulai jalan?
+- [x] Di iOS app baru, file mana yang jadi entry point?
+- [x] Apa fungsi `@main`?
+- [x] Apa yang dilakukan `WindowGroup`?
+- [x] Kapan `RootView()` atau first view dibuat?
+- [x] Kapan `var body: some View` dievaluasi?
 - [ ] Apakah kita butuh router dari Day 1?
 - [ ] Kalau belum pakai router, bagaimana screen pertama dipilih?
 - [ ] Apa bedanya deklarasi `RootView()` dan eksekusi logic di dalam view?

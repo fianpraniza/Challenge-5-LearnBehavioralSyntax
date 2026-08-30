@@ -33,8 +33,8 @@ practicing
 
 ## Guiding Questions
 - [ ] Behavior apa yang dikontrol `HomeViewState` di app lama?
-- [ ] Kenapa enum cocok untuk state yang pilihannya terbatas?
-- [ ] Bagaimana computed property seperti `title`, `subtitle`, dan `buttonTitle` bekerja?
+- [x] Kenapa enum cocok untuk state yang pilihannya terbatas?
+- [x] Bagaimana computed property seperti `title`, `subtitle`, dan `buttonTitle` bekerja?
 - [ ] Apa yang terjadi saat state berubah?
 - [ ] Kenapa UI ikut berubah saat state yang dibaca UI berubah?
 - [ ] State minimal apa yang dibutuhkan untuk mulai practice di iOS MVP?
@@ -45,12 +45,12 @@ practicing
 Build state-driven Home UI manually.
 
 Tasks:
-- [ ] Buat enum `HomePracticeState`.
-- [ ] Tambahkan computed properties: `title`, `subtitle`, `buttonTitle`.
-- [ ] Render title/subtitle/button di `HomeView` atau `ContentView`.
-- [ ] Simpan state dengan `@State` dulu.
-- [ ] Button tap mengubah state.
-- [ ] Amati UI update.
+- [x] Buat enum `HomePracticeState`.
+- [x] Tambahkan computed properties: `title`, `subtitle`, `buttonTitle`.
+- [x] Render title/subtitle/button di `HomeView` atau `ContentView`.
+- [x] Simpan state dengan `@State` dulu.
+- [x] Button tap mengubah state.
+- [x] Amati UI update.
 
 ## Mini Milestone
 Question:
