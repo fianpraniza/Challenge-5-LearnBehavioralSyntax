@@ -13,8 +13,8 @@ Memahami cara membangun app iOS sepenuhnya lewat explicit programmatic code, tan
 - [ ] Apa tanda sebuah file mulai terlalu besar?
 - [ ] Bagaimana tetap architecture-neutral tapi code masih readable?
 
-## Mini Milestone Ideas
-### Milestone 1 — Static UI to programmatic behavior
+## Concept Experiment Ideas
+### Experiment 1 — Static UI to programmatic behavior
 Question:
 Bagaimana mengubah UI slicing menjadi UI yang punya behavior?
 
@@ -24,7 +24,7 @@ Hands-on:
 - Tambahkan button/input.
 - Jelaskan behavior yang terjadi.
 
-### Milestone 2 — Split view only when needed
+### Experiment 2 — Split view only when needed
 Question:
 Kapan code perlu dipecah ke view baru tanpa langsung MVVM?
 

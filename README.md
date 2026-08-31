@@ -4,7 +4,7 @@
 
 This repository documents my Swift/iOS learning journey through a rebuild-oriented project.
 
-I am using this workspace to move from **“I can slice UI”** into understanding **how Swift/iOS code actually behaves when an app runs** — from the app entry point, state changes, user actions, rendering, data flow, and eventually a working iOS artifact.
+I am using this workspace to move from **“I can build UI layouts”** into understanding **how Swift/iOS code actually behaves when an app runs** — from the app entry point, state changes, user actions, rendering, data flow, and eventually a working iOS artifact.
 
 This is not just a repo for a finished app. It is also a learning trail.
 
@@ -55,7 +55,7 @@ Tiempo / Keynote Companion macOS
 
 The original app is a macOS public-speaking coach that can detect Keynote, record practice, calculate WPM, and show recap/history.
 
-This project is not intended to clone the macOS app 1:1. The goal is to rebuild meaningful behavior slices into an iOS app.
+This project is not intended to clone the macOS app 1:1. The goal is to rebuild meaningful Tiempo iOS feature milestones into a working iOS app.
 
 ## Rebuild Direction
 
@@ -91,12 +91,12 @@ Deferred from the first MVP:
 The core learning loop is:
 
 ```text
-Original app behavior
-→ iOS rebuild slice
-→ guiding question
-→ hands-on experiment
-→ observation
-→ note/artifact
+Original Tiempo feature/code
+→ syntax/pattern study
+→ iOS adaptation
+→ manual-first rebuild
+→ working feature artifact
+→ mechanics explanation
 ```
 
 A typical session should look like:
@@ -229,25 +229,43 @@ Important rule:
 
 ## Current Focus
 
-Current focus before Day 1:
+Current feature milestone path:
 
 ```text
-Rebuild orientation complete.
-Start from active rebuild slices:
-1. App Launch to First Screen
-2. Home State Drives UI
-```
+Phase 1 — Working Core Practice Flow
+1. Home Feature Rebuild
+2. Practice Start Flow
+3. Practice Timer
+4. Pause / Resume / Stop Control
+5. Practice Result Model
+6. Recap Screen
 
-Suggested Day 1:
+Phase 2 — Saved Practice
+7A. History List
+7B. Persistence
 
-```text
-Day 1 - App Launch + Home State Behavior
+Phase 3 — Speaking Coach Behavior
+8A. WPM / Pace Logic
+8B. Speech / Audio Pipeline
+8C. Permissions / Error States
+8D. Polish / Showcase MVP
 ```
 
 Goal:
 
 ```text
-Understand app entry flow and build a simple state-driven Home UI manually.
+Start with Milestone 1 — Home Feature Rebuild, then continue feature-by-feature from the original Tiempo app flow/source code.
+```
+
+Milestone loop:
+
+```text
+1. Inspect original Tiempo Home code.
+2. Identify behavior and Swift/SwiftUI syntax used.
+3. Rebuild the iOS version manually.
+4. Verify the screen/behavior works.
+5. Explain the execution mechanics.
+6. Adjust previous code as future features require.
 ```
 
 ## Artifacts
@@ -257,8 +275,8 @@ Artifacts in this journey should be tied to the Tiempo iOS rebuild.
 Artifact levels:
 
 1. behavior snippet / experiment,
-2. rebuild slice prototype,
-3. small working iOS slice,
+2. feature milestone prototype,
+3. small working iOS feature flow,
 4. showcase rebuild artifact.
 
 Each artifact should track:
@@ -277,4 +295,4 @@ Each artifact should track:
 - Guiding questions: organized into Active Rebuild Questions + Reference Bank.
 - Rebuild orientation note: created.
 - Xcode folder: cleaned up for app-rebuild focus.
-- Day 1: ready to start.
+- Milestone 1 — Home Feature Rebuild: ready to continue.

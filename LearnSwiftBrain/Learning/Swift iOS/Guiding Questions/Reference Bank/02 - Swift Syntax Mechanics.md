@@ -17,8 +17,8 @@ Memahami efek sintaks Swift saat compile-time dan runtime, bukan hanya definisin
 - [ ] Kapan closure dibuat dan kapan closure dieksekusi?
 - [ ] Apa bedanya menulis closure dengan menjalankan closure?
 
-## Mini Milestone Ideas
-### Milestone 1 — `let` vs `var` behavior
+## Concept Experiment Ideas
+### Experiment 1 — `let` vs `var` behavior
 Question:
 Apa efek `let` dan `var` selain “konstan vs bisa berubah”?
 
@@ -32,7 +32,7 @@ Evidence:
 - Error message.
 - Penjelasan kapan compiler mencegah perubahan.
 
-### Milestone 2 — Function execution flow
+### Experiment 2 — Function execution flow
 Question:
 Apa yang terjadi saat function dipanggil dan return value dipakai?
 

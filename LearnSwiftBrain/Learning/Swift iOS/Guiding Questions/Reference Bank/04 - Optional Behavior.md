@@ -14,8 +14,8 @@ Memahami optional sebagai mekanisme Swift untuk menangani value yang bisa ada at
 - [ ] Bagaimana optional membantu mencegah crash?
 - [ ] Apa bedanya empty string `""` dan `nil`?
 
-## Mini Milestone Ideas
-### Milestone 1 — `String` vs `String?`
+## Concept Experiment Ideas
+### Experiment 1 — `String` vs `String?`
 Question:
 Kenapa `String?` tidak bisa langsung dipakai seperti `String`?
 
@@ -28,7 +28,7 @@ Evidence:
 - Snippet.
 - Error/success observation.
 
-### Milestone 2 — nil vs empty string
+### Experiment 2 — nil vs empty string
 Question:
 Apa bedanya data kosong dan data tidak ada?
 

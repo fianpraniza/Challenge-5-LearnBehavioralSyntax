@@ -30,22 +30,30 @@ Kalau konteks sudah cukup, langsung bantu.
 Coach membuat scope kecil:
 ```text
 Scope sesi ini:
-- Konsep utama:
+- Feature milestone:
+- Original Tiempo source to inspect:
+- Behavior to rebuild:
+- Syntax/pattern to study:
 - Hands-on:
 - Manual-first constraint:
 - Codex:
-- Done kalau:
+- Done kalau feature/screen works:
 ```
 
 Example:
 ```text
 Scope sesi ini:
-- Konsep utama: function, parameter, return value.
-- Hands-on: bikin 3 function kecil.
+- Feature milestone: Home Feature Rebuild.
+- Original Tiempo source to inspect: HomeViewState, HomeStatusContentView, HomeViewModel.
+- Behavior to rebuild: Home state drives title/subtitle/button/action.
+- Syntax/pattern to study: enum, computed property, switch, Button action closure.
+- Hands-on: Fian rebuilds the iOS Home state/action behavior manually.
 - Manual-first: lu tulis semua function manual.
-- Codex: belum perlu.
-- Done kalau: lu bisa jelasin kapan function perlu return.
+- Codex: belum perlu kecuali review/debug.
+- Done kalau: Home screen behavior works and lu bisa jelasin state → action → UI update.
 ```
+
+For Tiempo rebuild sessions, do not start from an isolated concept unless Fian explicitly asks. Start from the current feature milestone and pull concepts from the original code/behavior.
 
 ## 3. Learn Phase
 Mentor menjelaskan konsep dengan format:

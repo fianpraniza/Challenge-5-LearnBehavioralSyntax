@@ -15,8 +15,8 @@ Memahami bagaimana aplikasi iOS mulai berjalan dari entry point sampai view pert
 - [ ] Apa bedanya app launch, view creation, dan view update?
 - [ ] Apa yang terjadi saat app masuk background/foreground?
 
-## Mini Milestone Ideas
-### Milestone 1 — Trace the first screen
+## Concept Experiment Ideas
+### Experiment 1 — Trace the first screen
 Question:
 Dari mana app mulai berjalan sampai `ContentView` muncul?
 
@@ -32,7 +32,7 @@ Evidence:
 Expected Understanding:
 Fian bisa menjelaskan entry point app dan hubungan `App → WindowGroup → ContentView`.
 
-### Milestone 2 — Observe body re-evaluation
+### Experiment 2 — Observe body re-evaluation
 Question:
 Kapan `body` dievaluasi ulang?
 

@@ -14,7 +14,7 @@ Curator tidak boleh menulis atau mengubah Obsidian sebelum Fian approve:
 Approval format:
 ```text
 Target:
-Learning/Swift iOS/Daily Logs/Day 01 - Topic.md
+Learning/Swift iOS/Daily Logs/2026-08-30 - Milestone 1 Home Feature.md
 
 Action:
 Create / Append / Edit

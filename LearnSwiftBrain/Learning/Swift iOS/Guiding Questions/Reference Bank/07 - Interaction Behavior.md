@@ -14,8 +14,8 @@ Memahami bagaimana user interaction seperti tap dan typing mengalir ke code, sta
 - [ ] Apa yang terjadi saat user mengetik di `TextField`?
 - [ ] Bagaimana event user mengalir ke data?
 
-## Mini Milestone Ideas
-### Milestone 1 — Button action lifecycle
+## Concept Experiment Ideas
+### Experiment 1 — Button action lifecycle
 Question:
 Kapan code di dalam `Button` jalan?
 
@@ -28,7 +28,7 @@ Evidence:
 - Snippet.
 - Execution trace.
 
-### Milestone 2 — TextField data flow
+### Experiment 2 — TextField data flow
 Question:
 Bagaimana typing user masuk ke state?
 

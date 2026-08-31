@@ -1,12 +1,14 @@
 # Features
 
-Behavior-oriented app areas for the Tiempo iOS rebuild.
+Feature milestone areas for the Tiempo iOS rebuild.
 
-Start simple. Create feature folders only when the behavior slice needs them.
+Start simple. Create feature folders only when the feature milestone needs them.
 
-Likely slices:
-- `Home/` — home state drives UI
-- `Practice/` — practice session state/timer
-- `Recap/` — result/summary screen
+Likely feature milestones:
+- `Home/` — Home Feature Rebuild
+- `Practice/` — Practice Start Flow, Timer, Pause/Resume/Stop, Result Model
+- `Recap/` — Recap Screen
+- `History/` — History List and Persistence later
+- `SpeakingCoach/` — WPM, Speech/Audio, Permissions, Polish later if needed
 
 No forced MVVM. Do not create View/ViewModel/Model folders by default.

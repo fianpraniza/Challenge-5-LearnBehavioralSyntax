@@ -3,11 +3,16 @@
 ## Purpose
 Guiding Questions adalah daftar pertanyaan eksplorasi untuk belajar Swift/iOS dengan pendekatan **behavior-of-code / execution-mechanics driven Swift**.
 
-Dalam workflow Fian, guiding questions **bukan kurikulum wajib yang harus diikuti urut dari atas ke bawah**. Guiding questions dipakai untuk mengubah app rebuild menjadi mini milestone hands-on.
+Dalam workflow Fian, guiding questions **bukan kurikulum wajib yang harus diikuti urut dari atas ke bawah**. Guiding questions dipakai untuk mengubah feature milestone Tiempo menjadi hands-on yang bisa ditracking.
 
 Core idea:
 ```text
-Original app behavior → iOS rebuild slice → guiding question → hands-on experiment → observation → note/artifact
+Original Tiempo feature/code
+→ syntax/pattern study
+→ iOS adaptation
+→ manual-first rebuild
+→ working feature artifact
+→ mechanics explanation
 ```
 
 ## Two Types of Guiding Questions
@@ -18,7 +23,7 @@ Folder:
 Active Rebuild Questions/
 ```
 
-Ini adalah pertanyaan aktif untuk rebuild **Tiempo iOS**. Ini yang dipakai untuk Day 1, Day 2, dst.
+Ini adalah pertanyaan aktif untuk rebuild **Tiempo iOS**. Ini dipakai untuk milestone fitur Tiempo iOS, bukan checklist day-by-day.
 
 Use this first ketika mulai sesi belajar.
 
@@ -28,52 +33,65 @@ Folder:
 Reference Bank/
 ```
 
-Ini adalah bank pertanyaan umum Swift/iOS mechanics. Buka hanya ketika behavior slice membutuhkan konsep tertentu.
+Ini adalah bank pertanyaan umum Swift/iOS mechanics. Buka hanya ketika feature milestone membutuhkan konsep tertentu.
 
 Reference Bank bukan checklist wajib.
 
 ## How to Use
-Pilih 1 behavior slice dari Active Rebuild Questions, lalu pilih 1–3 guiding questions untuk dijawab lewat code.
+Pilih current feature milestone dari Active Rebuild Questions, inspect source original Tiempo yang relevan, lalu pilih 1–3 guiding questions untuk dijawab lewat code.
 
 Default flow:
 ```text
 Question → Hypothesis → Hands-on experiment → Observation → My answer → Note/artifact
 ```
 
-## Mini Milestone Template
+## Feature Milestone Guiding Question Template
 ```markdown
-## Mini Milestone
-Question:
+## Feature Milestone
+Feature:
 
-Source behavior/code:
-
-Why this matters:
-
-Hypothesis:
-
-Hands-on experiment:
+### 1. Original behavior question
 -
 
-Evidence:
+### 2. Original syntax/pattern question
 -
 
-My observation:
+### 3. Engineering tradeoff question
 -
 
-My current answer:
+### 4. iOS adaptation question
 -
 
-Related notes:
-- [[...]]
+### 5. Execution mechanics question
+-
+
+### 6. Artifact/done question
+-
+
+## Manual-first task
+-
+
+## Evidence / verification
+-
 ```
 
 ## Active Rebuild Questions
 - [[Active Rebuild Questions/00 - Tiempo iOS Rebuild Questions]]
-- [[Active Rebuild Questions/01 - Slice 1 - App Launch to First Screen]]
-- [[Active Rebuild Questions/02 - Slice 2 - Home State Drives UI]]
-- [[Active Rebuild Questions/03 - Slice 3 - Button Action Routes Behavior]]
-- [[Active Rebuild Questions/04 - Slice 4 - Practice Session State]]
-- [[Active Rebuild Questions/05 - Slice 5 - Recap Model]]
+- [[Active Rebuild Questions/Milestone 1 - Home Feature Rebuild]]
+- [[Active Rebuild Questions/Milestone 1A - Home Entry Flow]]
+- [[Active Rebuild Questions/Milestone 1B - Home State Drives UI]]
+- [[Active Rebuild Questions/Milestone 1C - Home Primary Action Behavior]]
+- [[Active Rebuild Questions/Milestone 2 - Practice Start Flow]]
+- [[Active Rebuild Questions/Milestone 3 - Practice Timer]]
+- [[Active Rebuild Questions/Milestone 4 - Pause Resume Stop Control]]
+- [[Active Rebuild Questions/Milestone 5 - Practice Result Model]]
+- [[Active Rebuild Questions/Milestone 6 - Recap Screen]]
+- [[Active Rebuild Questions/Milestone 7A - History List]]
+- [[Active Rebuild Questions/Milestone 7B - Persistence]]
+- [[Active Rebuild Questions/Milestone 8A - WPM Pace Logic]]
+- [[Active Rebuild Questions/Milestone 8B - Speech Audio Pipeline]]
+- [[Active Rebuild Questions/Milestone 8C - Permissions Error States]]
+- [[Active Rebuild Questions/Milestone 8D - Polish Showcase MVP]]
 
 ## Reference Bank
 - [[Reference Bank/01 - App Execution Lifecycle]]
@@ -89,14 +107,16 @@ Related notes:
 - [[Reference Bank/11 - Debugging Mechanics]]
 - [[Reference Bank/12 - Artifact Explanation]]
 
-## Suggested Day 1 Starting Point
+## Current Milestone Starting Point
 Start from:
-- [[Active Rebuild Questions/01 - Slice 1 - App Launch to First Screen]]
-- [[Active Rebuild Questions/02 - Slice 2 - Home State Drives UI]]
+- [[Active Rebuild Questions/Milestone 1 - Home Feature Rebuild]]
 
-Possible Day 1 mini milestone:
+Focus:
 ```text
-Understand app launch → create simple HomePracticeState → state changes update UI
+inspect original Tiempo Home code
+→ understand Home state/action syntax
+→ rebuild working iOS Home screen
+→ explain runtime flow from app launch to button action/state update
 ```
 
 Related orientation note:

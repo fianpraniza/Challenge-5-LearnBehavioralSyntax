@@ -8,7 +8,7 @@ Original app: **Tiempo / Keynote Companion macOS**
 ## Why This App
 Fian wants to learn Swift/iOS through a rebuild-oriented workflow: studying behavior and execution mechanics from an app that was previously built with AI, then rebuilding an iOS version manually/programmatically.
 
-The goal is not to copy the macOS app 1:1, but to understand the code behavior behind it and rebuild meaningful iOS slices.
+The goal is not to copy the macOS app 1:1, but to understand the code behavior behind it and rebuild meaningful Tiempo iOS feature milestones.
 
 ## Original App Summary
 Tiempo is a native macOS public-speaking coach.
@@ -65,7 +65,7 @@ Codebase size observed:
 - speech/audio later.
 
 ### Full parity feasibility
-**Medium/low for 15 days** — full macOS parity is not realistic or necessary because several features are macOS-specific.
+**Medium/low for an early learning MVP** — full macOS parity is not realistic or necessary because several features are macOS-specific.
 
 ## What Should Transfer to iOS
 Good candidates for iOS rebuild:
@@ -184,130 +184,92 @@ This is an iOS reinterpretation, not a 1:1 macOS clone.
 - macOS-specific automation.
 - Advanced filler detection.
 
-## Initial Behavior Slices
-### Slice 1 — App launch to first screen
-Source references:
-- `KeynoteCompanionMacosApp.swift`
-- `RootView.swift`
-- `AppRouter.swift`
+## Feature Milestone Path
 
-Learning questions:
-- Dari mana app mulai jalan?
-- Apa fungsi `@main`?
-- Kapan root view dibuat?
-- Kapan `body` dievaluasi?
-- Bagaimana screen pertama dipilih?
+Each milestone should leave a working feature artifact. Later milestones may refactor or adjust previous features, like a professional app build process. A skeleton alone is not a completed feature artifact unless the milestone was explicitly scoped as setup/boilerplate.
 
-Possible iOS rebuild:
-```text
-Challenge5App → RootView → HomeView
-```
+### Phase 1 — Working Core Practice Flow
+1. **Milestone 1 — Home Feature Rebuild**
+   - Original source focus: Home view/state/action files.
+   - Artifact: Home screen working as the iOS app entry feature.
+2. **Milestone 2 — Practice Start Flow**
+   - Original source focus: Home primary action, routing, practice start behavior.
+   - Artifact: Home can move into a practice flow/screen.
+3. **Milestone 3 — Practice Timer**
+   - Original source focus: practice session timing / elapsed time behavior.
+   - Artifact: timer runs and updates UI while practicing.
+4. **Milestone 4 — Pause / Resume / Stop Control**
+   - Original source focus: practice state transitions and action handling.
+   - Artifact: start → pause → resume → stop works without invalid states.
+5. **Milestone 5 — Practice Result Model**
+   - Original source focus: practice/session/result models.
+   - Artifact: stopping practice produces structured result data.
+6. **Milestone 6 — Recap Screen**
+   - Original source focus: recap model/view behavior.
+   - Artifact: practice result appears on a recap screen.
 
-### Slice 2 — Home state drives UI
-Source references:
-- `HomeViewState.swift`
-- `HomeStatusContentView.swift`
-- `HomeViewModel.swift`
+### Phase 2 — Saved Practice
+7A. **Milestone 7A — History List**
+   - Original source focus: history feature and previous session display.
+   - Artifact: previous practice sessions appear in a list, starting with mock/in-memory data if needed.
+7B. **Milestone 7B — Persistence**
+   - Original source focus: SwiftData/history storage.
+   - Artifact: practice sessions can be saved and reopened.
 
-Behavior:
-```text
-state berubah → title/subtitle/button berubah
-```
+### Phase 3 — Speaking Coach Behavior
+8A. **Milestone 8A — WPM / Pace Logic**
+   - Original source focus: WPM calculator and pace feedback.
+   - Artifact: app can compute/display simple pace feedback.
+8B. **Milestone 8B — Speech / Audio Pipeline**
+   - Original source focus: speech recognition and audio capture.
+   - Artifact: app can experiment with speech/audio input if ready.
+8C. **Milestone 8C — Permissions / Error States**
+   - Original source focus: permission/status/error handling.
+   - Artifact: iOS permission/error states are represented clearly.
+8D. **Milestone 8D — Polish / Showcase MVP**
+   - Original source focus: final integrated user flow and intentional deferrals.
+   - Artifact: a presentable Tiempo iOS MVP/showcase flow.
 
-Learning questions:
-- Kenapa enum bisa drive UI?
-- Bagaimana computed property seperti `title` dan `primaryActionTitle` bekerja?
-- Apa yang terjadi saat state berubah?
-- Kenapa UI ikut berubah?
+This is an “8 milestone” path with expandable advanced groups. Details for milestones 2+ should be refined after inspecting the relevant original Tiempo source, not guessed upfront.
 
-Possible iOS rebuild:
-```text
-HomePracticeState → title/subtitle/button
-```
+## Guiding Question Format
+For every milestone, ask questions in this structure:
 
-### Slice 3 — Button action routes behavior
-Source references:
-- `HomeView.swift`
-- `handlePrimaryAction(_:)`
+1. **Original behavior** — What behavior does this feature perform in the original Tiempo app?
+2. **Original syntax/pattern** — What Swift/SwiftUI syntax, API, or pattern does the original code use?
+3. **Engineering tradeoff** — Why might the original app be built that way, and what alternatives exist?
+4. **iOS adaptation** — What should be brought over, simplified, redesigned, or deferred?
+5. **Execution mechanics** — What code runs first, what state/data changes, and why does UI update?
+6. **Artifact/done** — What proves this feature is working, not just a skeleton?
 
-Behavior:
-```text
-User tap button
-→ action enum dikirim
-→ switch action
-→ function dipanggil
-→ state berubah / navigation berubah
-```
-
-Learning questions:
-- Kapan closure `Button` dieksekusi?
-- Apa bedanya view declaration dan action execution?
-- Kenapa action bisa direpresentasikan sebagai enum?
-- Bagaimana event user mengalir ke function?
-
-### Slice 4 — Practice session state
-Source reference:
-- `PracticeViewModel.swift`
-
-Behavior:
-```text
-startSession()
-→ isRecording = true
-→ startTimer()
-→ elapsedTime update
-→ UI update
-```
-
-Learning questions:
-- Apa yang menyimpan status practice?
-- Apa yang berubah saat start/pause/resume/stop?
-- Bagaimana timer mengubah UI?
-- Kapan butuh `@State`, dan kapan mungkin butuh ViewModel?
-
-### Slice 5 — Recap model
-Source references:
-- `PracticeModels.swift`
-- `RecapModel.swift`
-- `RecapView.swift`
-
-Behavior:
-```text
-PracticeResult
-→ transform to recap data
-→ Recap screen displays summary
-```
-
-Learning questions:
-- Bagaimana struct menyimpan result?
-- Bagaimana function mengubah raw data jadi display model?
-- Apa bedanya model data dan view display?
-
-## Suggested Day 1
-Title:
-**Day 1 - App Rebuild Orientation + Home State Behavior**
+## Current Milestone
+Current focus:
+**Milestone 1 — Home Feature Rebuild**
 
 Focus:
-- Understand original app at high level.
-- Understand iOS app entry flow.
-- Start rebuilding a small Home screen behavior programmatically.
+- Inspect original Tiempo Home source before coding further.
+- Understand Home state/action syntax and the reasons behind it.
+- Rebuild a meaningful Home screen for Tiempo iOS, not a generic state demo.
+- Verify Home behavior as a working feature artifact.
 
 Guiding questions:
-- App lama mulai dari mana?
-- Di iOS app ini, entry point-nya di mana?
-- Apa screen pertama?
-- State apa yang menentukan isi Home?
-- Button pertama harus melakukan behavior apa?
+- Original Tiempo Home memakai state, action, computed properties, dan view composition bagaimana?
+- Bagian mana yang perlu dibawa ke iOS, dan bagian mana yang macOS-specific/deferred?
+- Saat user tap primary button, kode mana yang benar-benar dieksekusi?
+- State apa yang berubah, dan kenapa UI ikut berubah?
 
 Hands-on target:
-- Create a simple `HomePracticeState` enum.
-- Display title/subtitle/button from state.
-- Tap button changes state.
-- Observe UI update.
+- Build/continue a Tiempo-inspired Home screen.
+- Use explicit state to drive title/subtitle/button/action.
+- Route the primary action through a small function or action enum if it helps mirror the original behavior.
+- Keep core code manual-first.
 
 Artifact evidence:
 ```text
-state → UI changes
-button tap → state changes
+original Home behavior/syntax inspected
+→ iOS Home screen built manually
+→ Home state/action behavior verified
+→ execution mechanics explainable
 ```
 
 ## Learning Rule for This Rebuild
@@ -328,10 +290,10 @@ Codex can help with:
 - scaffold/TODOs,
 - refactor after behavior works.
 
-Avoid full AI implementation of core learning slices unless explicitly requested.
+Avoid full AI implementation of core learning milestones unless explicitly requested.
 
 ## Current Decision
-Use this app as the main learning source for the 15-day Swift/iOS workflow.
+Use this app as the main learning source for the feature-based Swift/iOS workflow.
 
 Rebuild target:
 **an iOS version inspired by Tiempo, focused first on presentation practice behavior, not macOS Keynote automation.**

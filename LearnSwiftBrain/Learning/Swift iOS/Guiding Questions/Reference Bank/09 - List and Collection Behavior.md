@@ -14,8 +14,8 @@ Memahami bagaimana collection data seperti array menjadi UI list, bagaimana item
 - [ ] Bagaimana UI tahu list harus berubah?
 - [ ] Apa yang terjadi jika dua item punya id sama?
 
-## Mini Milestone Ideas
-### Milestone 1 — Array to List
+## Concept Experiment Ideas
+### Experiment 1 — Array to List
 Question:
 Bagaimana array berubah menjadi List UI?
 
@@ -28,7 +28,7 @@ Evidence:
 - Snippet.
 - Screenshot list.
 
-### Milestone 2 — Add/delete behavior
+### Experiment 2 — Add/delete behavior
 Question:
 Apa yang terjadi pada UI saat array berubah?
 

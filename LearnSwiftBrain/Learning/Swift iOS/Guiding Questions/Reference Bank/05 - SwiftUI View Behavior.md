@@ -15,8 +15,8 @@ Memahami view SwiftUI sebagai deklarasi UI berbasis value, bukan sekadar hasil s
 - [ ] Bagaimana SwiftUI tahu bagian mana yang perlu di-update?
 - [ ] Apa peran identity dalam SwiftUI view?
 
-## Mini Milestone Ideas
-### Milestone 1 — Modifier order experiment
+## Concept Experiment Ideas
+### Experiment 1 — Modifier order experiment
 Question:
 Kenapa urutan modifier bisa mengubah tampilan?
 
@@ -29,7 +29,7 @@ Evidence:
 - Screenshot.
 - Penjelasan urutan modifier.
 
-### Milestone 2 — body as description
+### Experiment 2 — body as description
 Question:
 Apakah `body` menyimpan UI final atau mendeskripsikan UI?
 

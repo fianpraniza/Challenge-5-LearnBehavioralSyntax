@@ -10,7 +10,30 @@ Obsidian ini berfungsi sebagai:
 - evidence progress belajar dan artifact/working apps.
 
 ## Current Focus
-- Belum ditentukan — Fian akan memilih topik per sesi.
+Feature milestone path for Tiempo iOS Rebuild.
+
+Fian is learning Swift/iOS by rebuilding Tiempo iOS per feature, not by following a rigid day-by-day curriculum. Each milestone should produce a working feature/screen and include source-code reading from the original Tiempo app.
+
+Current path:
+```text
+Phase 1 — Working Core Practice Flow
+1. Home Feature Rebuild
+2. Practice Start Flow
+3. Practice Timer
+4. Pause / Resume / Stop Control
+5. Practice Result Model
+6. Recap Screen
+
+Phase 2 — Saved Practice
+7A. History List
+7B. Persistence
+
+Phase 3 — Speaking Coach Behavior
+8A. WPM / Pace Logic
+8B. Speech / Audio Pipeline
+8C. Permissions / Error States
+8D. Polish / Showcase MVP
+```
 
 ## Core Workflow
 ```text
@@ -42,7 +65,7 @@ Start → Scope → Learn → Manual Code → Stuck Handling → Review/Debug �
 ## Guiding Questions
 - [[Guiding Questions/00 - Guiding Questions Index]]
 
-Guiding Questions berisi mini milestone eksplorasi untuk memahami execution mechanics Swift/iOS: bagaimana kode dieksekusi, state berubah, UI update, dan app berjalan dari awal sampai akhir.
+Guiding Questions berisi milestone tracker dan pertanyaan eksplorasi untuk memahami execution mechanics Swift/iOS: bagaimana kode dieksekusi, state berubah, UI update, dan app berjalan dari awal sampai akhir.
 
 ## Learning Areas
 ### Daily Logs
@@ -58,7 +81,9 @@ Catatan error yang worth saving. Lihat folder [[Errors & Fixes]].
 Catatan app/prototype/showcase. Lihat folder [[Artifacts]].
 
 ## Open Questions
-- Topik Day 1 belum dipilih.
+- Original Tiempo Home syntax/pattern apa saja yang perlu dipahami sebelum lanjut rebuild?
+- Behavior Home mana yang harus dibawa ke iOS Milestone 1?
+- Apa done criteria agar Home feature dianggap working, bukan sekadar skeleton?
 
 ## Next Tiny Step
-- Pilih topik pertama yang ingin dipelajari.
+- Audit original Tiempo Home code, lalu tentukan versi Home feature iOS yang akan dibangun manual-first.

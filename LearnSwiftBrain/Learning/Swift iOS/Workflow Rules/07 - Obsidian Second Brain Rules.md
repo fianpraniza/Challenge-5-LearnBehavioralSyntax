@@ -53,8 +53,8 @@ Setuju gua tulis ini ke Obsidian?
 ## Naming Rules
 ### Daily Logs
 ```text
-Day 01 - Swift Basics.md
-Day 02 - Functions and Optionals.md
+2026-08-30 - Milestone 1 Home Feature.md
+2026-09-01 - Practice Timer.md
 ```
 
 ### Concept Notes
@@ -74,14 +74,14 @@ Error - Index Out of Range.md
 ### Artifact Notes
 ```text
 Artifact - Tiempo iOS Rebuild Orientation.md
-Artifact - Home State Behavior.md
-Artifact - Practice Timer Slice.md
-Artifact - Recap Model Slice.md
+Artifact - Milestone 1 Home Feature.md
+Artifact - Milestone 3 Practice Timer.md
+Artifact - Milestone 6 Recap Screen.md
 ```
 
 ## Daily Log Template
 ```markdown
-# Day XX - [Topic]
+# [Date] - [Milestone / Topic]
 
 ## Context
 - Date:

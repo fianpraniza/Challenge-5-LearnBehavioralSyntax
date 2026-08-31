@@ -15,8 +15,8 @@ Memahami bagaimana state menyimpan data yang berubah dan bagaimana perubahan sta
 - [ ] Apa yang terjadi pada local variable biasa saat body dievaluasi ulang?
 - [ ] Kenapa state tidak hilang walaupun `body` dipanggil ulang?
 
-## Mini Milestone Ideas
-### Milestone 1 — Counter state
+## Concept Experiment Ideas
+### Experiment 1 — Counter state
 Question:
 Apa yang terjadi saat `@State` berubah?
 
@@ -31,7 +31,7 @@ Evidence:
 - Screenshot.
 - Execution trace versi Fian.
 
-### Milestone 2 — Normal variable vs @State
+### Experiment 2 — Normal variable vs @State
 Question:
 Kenapa variable biasa tidak cukup untuk update UI?
 

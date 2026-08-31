@@ -14,8 +14,8 @@ Memahami bagaimana data mengalir antar view, siapa pemilik data, dan bagaimana c
 - [ ] Kapan data flow satu arah dan kapan dua arah?
 - [ ] Bagaimana mencegah data flow jadi berantakan?
 
-## Mini Milestone Ideas
-### Milestone 1 — Parent owns state, child edits via binding
+## Concept Experiment Ideas
+### Experiment 1 — Parent owns state, child edits via binding
 Question:
 Bagaimana child view mengubah data milik parent?
 
@@ -29,7 +29,7 @@ Evidence:
 - Snippet parent/child.
 - Execution trace data flow.
 
-### Milestone 2 — `$value` vs `value`
+### Experiment 2 — `$value` vs `value`
 Question:
 Kenapa beberapa view butuh `$name`, bukan `name`?
 

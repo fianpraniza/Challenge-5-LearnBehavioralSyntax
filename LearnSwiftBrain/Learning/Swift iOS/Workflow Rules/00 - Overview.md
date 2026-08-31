@@ -6,7 +6,7 @@ Dokumen ini adalah overview workflow belajar Swift/iOS Fian. Folder `Workflow Ru
 Ini bukan roadmap kaku. Ini adalah operating system belajar: cara Hermes, Codex, Obsidian, dan role-role lain seharusnya membantu Fian.
 
 ## Intent
-Fian ingin belajar Swift/iOS dari fundamental sampai advanced dalam ±15 hari secara:
+Fian ingin belajar Swift/iOS dari fundamental sampai advanced melalui milestone fitur Tiempo iOS secara:
 - hands-on,
 - manual-first,
 - tidak terlalu diatur path-nya,

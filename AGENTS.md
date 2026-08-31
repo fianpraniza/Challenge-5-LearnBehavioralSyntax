@@ -8,7 +8,7 @@ The current learning target is **behavior-of-code / execution-mechanics driven S
 - understand how Swift syntax behaves at compile-time and runtime,
 - understand how an iOS app executes from entry point to UI updates,
 - rebuild app behavior through explicit programmatic Swift/SwiftUI code,
-- use the previous macOS app as the source of behavior slices and guiding questions.
+- use the previous macOS app as the source of feature milestones, syntax/pattern study, and guiding questions.
 
 The workflow is intentionally:
 - app-rebuild oriented,
@@ -17,6 +17,13 @@ The workflow is intentionally:
 - flexible rather than rigid-roadmap driven,
 - artifact-aware,
 - architecture-neutral at the start.
+
+Prefer feature milestones over day-by-day plans. For Tiempo iOS, each milestone should start from original Tiempo source behavior/syntax, then rebuild a working iOS feature/screen manual-first. Skeleton-only tasks should not be treated as completed feature artifacts unless explicitly scoped as setup.
+
+Current milestone shape:
+- Phase 1 — Working Core Practice Flow: Home Feature, Practice Start Flow, Practice Timer, Pause/Resume/Stop, Practice Result Model, Recap Screen.
+- Phase 2 — Saved Practice: History List, Persistence.
+- Phase 3 — Speaking Coach Behavior: WPM/Pace, Speech/Audio, Permissions/Error States, Polish/Showcase MVP.
 
 Do not force MVVM, Clean Architecture, Coordinator, dependency injection, or advanced architecture patterns unless Fian explicitly chooses architecture/refactoring as the learning topic.
 
@@ -114,7 +121,7 @@ Reference-bank questions live under:
 LearnSwiftBrain/Learning/Swift iOS/Guiding Questions/Reference Bank/
 ```
 
-Reference Bank is not a required checklist. Use it only when an active rebuild slice needs that concept.
+Reference Bank is not a required checklist. Use it only when an active feature milestone needs that concept.
 
 ### App rebuild orientation note
 Main orientation note:
@@ -148,7 +155,7 @@ AI help should escalate gradually:
 hint → pseudocode → minimal snippet → minimal patch → full solution only if requested/stuck/boilerplate
 ```
 
-For core learning slices:
+For core learning milestones:
 - Do not implement the entire behavior immediately.
 - Prefer guiding questions, hints, TODOs, minimal snippets, and review.
 - If giving a full reference solution, tell Fian to rewrite it manually instead of copy-pasting.
@@ -180,7 +187,7 @@ Obsidian should capture:
 - concepts learned,
 - hands-on attempts,
 - errors and fixes,
-- app behavior slices,
+- app feature milestones,
 - execution-mechanics observations,
 - artifact progress,
 - what Fian built manually,
@@ -197,7 +204,7 @@ Guiding questions should primarily come from the app being rebuilt.
 Preferred flow:
 
 ```text
-Original app behavior → iOS rebuild slice → guiding question → hands-on experiment → observation → note/artifact
+Original Tiempo feature/code → syntax/pattern study → iOS adaptation → manual-first rebuild → working feature artifact → mechanics explanation
 ```
 
 Use Active Rebuild Questions first. Use Reference Bank only as supporting material.
@@ -208,8 +215,8 @@ Artifacts should follow the Tiempo iOS rebuild, not force unrelated exercise app
 
 Artifact levels:
 1. behavior snippet / experiment,
-2. mini prototype,
-3. small working iOS slice,
+2. feature milestone prototype,
+3. small working iOS feature flow,
 4. showcase rebuild artifact.
 
 Track clearly:
@@ -227,7 +234,7 @@ Start → Scope → Learn → Manual Code → Stuck Handling → Review/Debug �
 
 Keep sessions lightweight:
 - ask at most 3 opening questions when context is unclear,
-- define active rebuild slice, guiding question, hands-on task, and done criteria,
+- define active feature milestone, guiding questions, hands-on task, and done criteria,
 - allow pivots,
 - reset without guilt after gaps,
 - scale to Fian's available time and energy.

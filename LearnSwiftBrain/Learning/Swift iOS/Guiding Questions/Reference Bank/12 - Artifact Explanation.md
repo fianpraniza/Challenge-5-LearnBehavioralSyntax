@@ -15,8 +15,8 @@ Mempersiapkan Fian menjelaskan artifact/working app bukan cuma dari fitur, tapi 
 - [ ] Apa yang belum verified?
 - [ ] Kalau gua jelaskan ke orang lain, alur eksekusinya gimana?
 
-## Mini Milestone Ideas
-### Milestone 1 — Execution walkthrough
+## Concept Experiment Ideas
+### Experiment 1 — Execution walkthrough
 Question:
 Bisakah Fian menjelaskan app dari launch sampai interaction utama?
 
@@ -25,7 +25,7 @@ Hands-on:
 - Tulis execution walkthrough.
 - Jelaskan state, action, rendering, dan data flow.
 
-### Milestone 2 — Manual vs AI contribution
+### Experiment 2 — Manual vs AI contribution
 Question:
 Bagian mana yang menjadi evidence belajar manual?
 

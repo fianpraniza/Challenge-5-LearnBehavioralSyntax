@@ -13,8 +13,8 @@ Memahami error bukan hanya sebagai sesuatu yang harus hilang, tapi sebagai sinya
 - [ ] Apa minimal change untuk membuktikan hipotesis?
 - [ ] Kalau fix berhasil, kenapa berhasil?
 
-## Mini Milestone Ideas
-### Milestone 1 — Compile-time error classification
+## Concept Experiment Ideas
+### Experiment 1 — Compile-time error classification
 Question:
 Compiler sedang mencegah bug apa?
 
@@ -23,7 +23,7 @@ Hands-on:
 - Klasifikasikan: type/scope/optional/mutability.
 - Tulis fix minimal.
 
-### Milestone 2 — Debug hypothesis
+### Experiment 2 — Debug hypothesis
 Question:
 Bagaimana membuktikan dugaan bug dengan perubahan minimal?
 

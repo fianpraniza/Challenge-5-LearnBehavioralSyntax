@@ -6,7 +6,7 @@ Artifact adalah bukti belajar konkret dari proses rebuild **Tiempo iOS**.
 Dalam workflow baru ini, artifact bukan kumpulan exercise random. Artifact harus lahir dari:
 
 ```text
-Original Tiempo macOS behavior → iOS rebuild slice → hands-on code → observation → working/verified behavior
+Original Tiempo feature/code → syntax/pattern study → iOS adaptation → manual-first rebuild → working feature artifact → mechanics explanation
 ```
 
 Targetnya bukan langsung bikin app keren atau full parity dengan macOS app. Targetnya adalah meninggalkan evidence bahwa Fian memahami behavior code dan bisa membangun ulang bagian app secara manual/programmatic.
@@ -33,8 +33,8 @@ Evidence:
 - screenshot kalau UI berubah,
 - explanation: code → behavior.
 
-### Level 2 — Rebuild slice prototype
-Untuk satu behavior slice yang bisa dicoba di iOS.
+### Level 2 — Feature milestone prototype
+Untuk satu feature milestone yang bisa dicoba di iOS.
 
 Examples:
 - Home screen changes based on state,
@@ -49,8 +49,8 @@ Evidence:
 - short execution trace,
 - link to active guiding questions.
 
-### Level 3 — Small working iOS rebuild
-Gabungan beberapa slices menjadi app flow kecil.
+### Level 3 — Small working iOS feature flow
+Gabungan beberapa feature milestones menjadi app flow kecil.
 
 Example MVP flow:
 ```text
@@ -81,7 +81,7 @@ Includes:
 Artifact disebut working kalau:
 - project/build bisa dijalankan, atau
 - simulator/app membuka flow utama tanpa crash, atau
-- behavior slice menghasilkan output/visual response yang sesuai.
+- feature milestone menghasilkan output/visual response yang sesuai.
 
 Kalau belum bisa verify:
 ```text
@@ -117,7 +117,7 @@ Codex boleh bantu:
 - explain file structure.
 
 Codex jangan:
-- implement core rebuild slice dari nol tanpa diminta,
+- implement core feature milestone dari nol tanpa diminta,
 - bikin full Tiempo iOS app lengkap,
 - copy architecture macOS app mentah-mentah,
 - over-architect dengan MVVM/router/DI sebelum Fian memilih itu sebagai topik,
@@ -125,10 +125,14 @@ Codex jangan:
 
 ## Artifact Cadence
 - Setiap sesi: idealnya ada small evidence dari active rebuild question.
-- Setiap 2–4 sesi: satu rebuild slice prototype mulai terlihat.
-- Akhir 15 hari: pilih satu working flow untuk dipoles jadi showcase.
+- Setiap feature milestone: arahkan ke satu working feature/screen yang bisa diverifikasi.
+- Setelah core flow bekerja: pilih satu working flow untuk dipoles jadi showcase.
 
 Hari yang hanya fokus memahami source app atau execution mechanics tetap valid, asal ada observation/learning note.
+
+Each feature milestone should aim to leave a working feature/screen, even if small. A session may end with partial progress, but the milestone is not complete until the feature behavior is working/verified or explicitly marked not verified.
+
+A skeleton alone is not a completed rebuild artifact unless the milestone goal was project setup/boilerplate.
 
 ## Main Rebuild Artifact Direction
 Working title:
@@ -163,7 +167,7 @@ Deferred:
 
 ## Artifact Note Template
 ```markdown
-# Artifact - [Slice/App Name]
+# Artifact - [Feature Milestone/App Name]
 
 ## Status
 Not started / In progress / Working / Polished / Not verified
@@ -221,7 +225,7 @@ A showcase rebuild artifact should answer:
 - Observation is written.
 
 ### Level 2 done
-- One rebuild slice works visually or behaviorally.
+- One feature milestone works visually or behaviorally.
 - Manual test checklist exists.
 - Execution trace is explainable.
 

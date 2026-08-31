@@ -6,7 +6,7 @@ This is Fian's iOS rebuild learning project based on the previous macOS app:
 https://github.com/sandeeffendi/keynote-companion-macos.git
 ```
 
-The goal is not to clone the macOS app 1:1. The goal is to rebuild meaningful iOS behavior slices manually/programmatically to understand Swift/iOS execution mechanics.
+The goal is not to clone the macOS app 1:1. The goal is to rebuild meaningful Tiempo iOS feature milestones manually/programmatically to understand Swift/iOS execution mechanics.
 
 ## Learning Target
 
@@ -52,7 +52,7 @@ Challenge5/
 Folder intent:
 
 - `App/` — root app flow such as `RootView.swift` when needed.
-- `Features/` — behavior-oriented slices such as Home, Practice, Recap.
+- `Features/` — feature milestone areas such as Home, Practice, Recap, History, and Speaking Coach behavior.
 - `Core/` — shared models/utilities only when reuse is real.
 
 ## Architecture Rule
@@ -76,7 +76,7 @@ hint → pseudocode → minimal snippet → minimal patch → full solution only
 Guiding questions should come from the app being rebuilt:
 
 ```text
-Original app behavior → iOS rebuild slice → guiding question → hands-on experiment → observation → note/artifact
+Original Tiempo feature/code → syntax/pattern study → iOS adaptation → manual-first rebuild → working feature artifact → mechanics explanation
 ```
 
 Main Obsidian orientation note:

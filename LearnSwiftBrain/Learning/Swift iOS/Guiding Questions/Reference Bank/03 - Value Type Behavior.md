@@ -13,8 +13,8 @@ Memahami behavior value type di Swift, terutama `struct`, copy behavior, dan ken
 - [ ] Kenapa SwiftUI banyak pakai struct untuk View?
 - [ ] Apa konsekuensi View sebagai value?
 
-## Mini Milestone Ideas
-### Milestone 1 — Copy a struct
+## Concept Experiment Ideas
+### Experiment 1 — Copy a struct
 Question:
 Kalau struct dicopy, apakah perubahan satu variable memengaruhi variable lain?
 
@@ -28,7 +28,7 @@ Evidence:
 - Snippet.
 - Output/observation.
 
-### Milestone 2 — `mutating` method
+### Experiment 2 — `mutating` method
 Question:
 Kenapa method struct butuh `mutating` untuk mengubah property?
 
