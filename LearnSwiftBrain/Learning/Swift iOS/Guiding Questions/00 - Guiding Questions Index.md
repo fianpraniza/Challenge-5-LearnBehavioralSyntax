@@ -8,7 +8,9 @@ Dalam workflow Fian, guiding questions **bukan kurikulum wajib yang harus diikut
 Core idea:
 ```text
 Original Tiempo feature/code
+→ domain modeling
 → syntax/pattern study
+→ engineering tradeoff
 → iOS adaptation
 → manual-first rebuild
 → working feature artifact
@@ -49,6 +51,15 @@ Question → Hypothesis → Hands-on experiment → Observation → My answer �
 ```markdown
 ## Feature Milestone
 Feature:
+
+## Deep behavior lens
+- Domain modeling: what real app situation is represented?
+- Representation: why this data/syntax shape?
+- Behavior: what changes when this value changes?
+- Invariant / impossible state: what should never be allowed?
+- Tradeoff: what does original Tiempo choose, and what do we simplify?
+- Runtime: what is declared vs what executes?
+- Artifact evidence: how do we prove this is working?
 
 ### 1. Original behavior question
 -

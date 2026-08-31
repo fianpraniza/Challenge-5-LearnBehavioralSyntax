@@ -7,6 +7,18 @@ Show elapsed practice time that updates while a session is active.
 - `Features/Practice/ViewModel/PracticeViewModel.swift`
 - any timer/elapsed time logic in the practice feature
 
+
+## Deep Behavior Lens
+Use these checks while working through this milestone:
+
+- **Domain modeling:** what real app situation is this code representing?
+- **Representation:** why is this represented with enum, struct, state, function, list, service, or persistence?
+- **Behavior:** what UI/action/result changes when this value changes?
+- **Invariant / impossible state:** what invalid condition should the code prevent?
+- **Tradeoff:** what does original Tiempo choose, and what do we simplify for iOS learning?
+- **Runtime:** what code is declared, what code executes, and when?
+- **Artifact evidence:** what proves the feature works?
+
 ## Guiding Questions
 ### 1. Original behavior question
 - How does original Tiempo track elapsed practice time?
@@ -19,7 +31,8 @@ Show elapsed practice time that updates while a session is active.
 - What are the risks of timer logic inside a SwiftUI View?
 
 ### 4. iOS adaptation question
-- What is the simplest timer approach that teaches mechanics without copying full original architecture?
+- Which original timer-related syntax/patterns are reusable for iOS and should be studied/adapted?
+- What is the simplest timer approach that teaches mechanics without copying macOS-only or too-advanced original architecture?
 
 ### 5. Execution mechanics question
 - Start session → timer begins → elapsed value changes → UI re-renders: what code runs repeatedly?

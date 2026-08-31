@@ -8,7 +8,9 @@ Original app: **Tiempo / Keynote Companion macOS**
 ## Why This App
 Fian wants to learn Swift/iOS through a rebuild-oriented workflow: studying behavior and execution mechanics from an app that was previously built with AI, then rebuilding an iOS version manually/programmatically.
 
-The goal is not to copy the macOS app 1:1, but to understand the code behavior behind it and rebuild meaningful Tiempo iOS feature milestones.
+The goal is not to copy the macOS app 1:1 at the platform/UI-feature level. The goal is to understand the original code behavior and intentionally adapt the relevant Swift/SwiftUI syntax, patterns, and tradeoffs into meaningful Tiempo iOS feature milestones.
+
+“Not 1:1” does **not** mean skipping original reusable Swift patterns. If the original Tiempo code uses a relevant pattern such as enum state, enum action, computed properties, `switch`, view composition, closures, model structs, or async tasks, prefer studying and adapting it explicitly. Simplify/defer only when the original code is macOS-specific, too advanced for the current milestone, or not needed for the current iOS behavior.
 
 ## Original App Summary
 Tiempo is a native macOS public-speaking coach.
@@ -158,7 +160,12 @@ Working title:
 Product idea:
 An iOS presentation-practice companion that helps the user run a speaking practice session, track time/pace, and review a recap.
 
-This is an iOS reinterpretation, not a 1:1 macOS clone.
+This is an iOS reinterpretation, not a 1:1 macOS platform clone.
+
+That means:
+- adapt reusable Swift/SwiftUI syntax and behavior patterns from original Tiempo when they fit iOS learning,
+- avoid copying macOS-only implementation details directly,
+- explain every simplification/defer decision so original patterns are not silently skipped.
 
 ## MVP Scope
 ### Must-have for first iOS MVP
@@ -235,10 +242,12 @@ This is an “8 milestone” path with expandable advanced groups. Details for m
 ## Guiding Question Format
 For every milestone, ask questions in this structure:
 
+0. **Deep behavior lens** — What domain is being modeled, why this representation, what behavior changes, what invalid states are prevented, what tradeoff is being made, and what code actually executes at runtime?
+
 1. **Original behavior** — What behavior does this feature perform in the original Tiempo app?
 2. **Original syntax/pattern** — What Swift/SwiftUI syntax, API, or pattern does the original code use?
 3. **Engineering tradeoff** — Why might the original app be built that way, and what alternatives exist?
-4. **iOS adaptation** — What should be brought over, simplified, redesigned, or deferred?
+4. **iOS adaptation** — Which original syntax/patterns should be brought over, and which macOS-specific or too-advanced implementation details should be simplified, redesigned, or deferred?
 5. **Execution mechanics** — What code runs first, what state/data changes, and why does UI update?
 6. **Artifact/done** — What proves this feature is working, not just a skeleton?
 

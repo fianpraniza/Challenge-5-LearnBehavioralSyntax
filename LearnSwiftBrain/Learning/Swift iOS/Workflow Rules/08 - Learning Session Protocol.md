@@ -32,8 +32,10 @@ Coach membuat scope kecil:
 Scope sesi ini:
 - Feature milestone:
 - Original Tiempo source to inspect:
+- Domain being modeled:
 - Behavior to rebuild:
 - Syntax/pattern to study:
+- Engineering tradeoff to notice:
 - Hands-on:
 - Manual-first constraint:
 - Codex:
@@ -45,8 +47,10 @@ Example:
 Scope sesi ini:
 - Feature milestone: Home Feature Rebuild.
 - Original Tiempo source to inspect: HomeViewState, HomeStatusContentView, HomeViewModel.
+- Domain being modeled: possible statuses of the practice/Home flow.
 - Behavior to rebuild: Home state drives title/subtitle/button/action.
 - Syntax/pattern to study: enum, computed property, switch, Button action closure.
+- Engineering tradeoff to notice: simple `@State` now vs ViewModel later when behavior grows.
 - Hands-on: Fian rebuilds the iOS Home state/action behavior manually.
 - Manual-first: lu tulis semua function manual.
 - Codex: belum perlu kecuali review/debug.

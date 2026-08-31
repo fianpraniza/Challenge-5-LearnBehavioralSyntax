@@ -12,12 +12,35 @@ Related orientation note:
 Membangun ulang versi iOS dari app public-speaking practice companion secara manual-first dan programmatic, sambil memahami mechanics Swift/iOS dari setiap feature behavior.
 
 ## Rebuild Principle
-Tidak copy 1:1 dari macOS app.
+Tidak copy 1:1 dari macOS app pada level platform/UI-feature.
+
+Ini **bukan** berarti melewatkan syntax/pattern original Tiempo.
+
+Kalau original Tiempo memakai syntax/pattern Swift yang relevan untuk iOS dan penting untuk belajar behavior, pattern itu harus dipelajari dan diadaptasi secara eksplisit. Contoh:
+- enum state/action,
+- computed property,
+- `switch`,
+- view composition,
+- closure callback,
+- model `struct`,
+- async/task flow ketika milestone-nya sudah membutuhkan.
+
+Yang boleh disederhanakan atau ditunda:
+- AppKit / `NSWindow`,
+- floating macOS overlay,
+- AppleScript / Apple Events,
+- Keynote automation,
+- macOS-only permission behavior,
+- architecture original yang terlalu berat untuk milestone saat ini.
+
+Setiap simplification/defer decision harus dijelaskan, supaya original syntax/pattern tidak hilang diam-diam.
 
 Yang dilakukan:
 ```text
 Original Tiempo feature/code
+→ domain modeling
 → syntax/pattern study
+→ engineering tradeoff
 → iOS adaptation
 → manual-first rebuild
 → working feature artifact
@@ -70,7 +93,15 @@ Current focus:
 - [[Milestone 1 - Home Feature Rebuild]]
 
 ## Guiding Question Format
-For each feature milestone, use this question structure:
+For each feature milestone, use this deeper question structure. The goal is to help Fian ask questions he may not know how to ask yet as a new engineer.
+
+### 0. Deep behavior lens
+- What real-world/app domain is this code modeling?
+- Why is this represented with this kind of data/syntax?
+- What behavior changes when the data changes?
+- What impossible states or invalid transitions should the code prevent?
+- What tradeoff does the original app make, and what tradeoff should the iOS learning version make?
+- What code is only declared, and what code actually executes at runtime?
 
 ### 1. Original behavior question
 What behavior does this feature perform in the original Tiempo app?
@@ -82,7 +113,7 @@ What Swift/SwiftUI syntax, API, or pattern does the original code use to create 
 Why might the original app be built that way? What are the simpler or alternative approaches?
 
 ### 4. iOS adaptation question
-For the iOS rebuild, what should be brought over, simplified, redesigned, or deferred?
+For the iOS rebuild, which original syntax/patterns should be brought over, and which macOS-specific or too-advanced implementation details should be simplified, redesigned, or deferred?
 
 ### 5. Execution mechanics question
 When the user action happens, what code runs first, what state/data changes, and why does the UI update?
@@ -93,13 +124,14 @@ What proves this feature is working as a rebuild artifact, not just a skeleton?
 ## Current Learning Strategy
 For each feature milestone:
 1. Inspect relevant original Tiempo code.
-2. Identify behavior + Swift/SwiftUI syntax/patterns used.
-3. Ask the six guiding question types above.
-4. Decide the iOS adaptation.
-5. Fian rebuilds the core behavior manually.
-6. Verify the feature/screen works, or mark it explicitly as not verified.
-7. Explain execution mechanics.
-8. Record observation in Daily Log / Concept Note / Artifact Note if worth it.
+2. Identify the domain being modeled, not only the syntax being used.
+3. Identify behavior + Swift/SwiftUI syntax/patterns used.
+4. Ask the deep behavior lens and six guiding question types above.
+5. Decide the iOS adaptation.
+6. Fian rebuilds the core behavior manually.
+7. Verify the feature/screen works, or mark it explicitly as not verified.
+8. Explain execution mechanics and engineering tradeoff.
+9. Record observation in Daily Log / Concept Note / Artifact Note if worth it.
 
 ## Open Rebuild Questions
 - [ ] Apa core behavior dari Tiempo yang paling penting untuk iOS MVP?

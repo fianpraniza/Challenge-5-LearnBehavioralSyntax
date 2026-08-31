@@ -29,7 +29,7 @@ Ini mode default untuk rebuild Tiempo iOS per fitur/milestone, bukan day-by-day 
 Hermes harus memberi:
 1. Scope singkat.
 2. Mental model pendek.
-3. Guiding questions.
+3. Deep guiding questions: domain modeling, representation, behavior, invariant, tradeoff, runtime, artifact evidence.
 4. Task manual-first.
 5. Stop point / done criteria.
 6. Instruksi kapan Fian sebaiknya bertanya.
@@ -38,8 +38,10 @@ Format:
 ```text
 Milestone Scope
 Original Tiempo Source
+Domain Being Modeled
 Behavior Target
 Syntax/Pattern to Study
+Engineering Tradeoff
 Manual Task
 Working Stop Point
 Kapan tanya Hermes
@@ -55,8 +57,10 @@ Format:
 Hari ini fokusnya:
 - Feature milestone:
 - Original Tiempo source:
+- Domain being modeled:
 - Behavior target:
 - Syntax/pattern to study:
+- Engineering tradeoff:
 - Guiding questions:
 - Hands-on:
 - Done kalau feature/screen works:
@@ -67,12 +71,14 @@ Contoh:
 Hari ini fokus:
 - Feature milestone: Milestone 1 - Home Feature Rebuild
 - Original Tiempo source: HomeViewState, HomeStatusContentView, HomeViewModel, HomeView
+- Domain being modeled: status/kondisi resmi dari Home/practice flow
 - Behavior target: Home screen content and primary action are driven by state
 - Syntax/pattern to study: enum, computed property, switch, Button action closure
+- Engineering tradeoff: enum + @State sederhana dulu, ViewModel/router nanti kalau behavior menuntut
 - Guiding questions:
-  1. Original Tiempo Home pakai state/action bagaimana?
-  2. Apa yang terjadi saat state berubah?
-  3. Kenapa UI ikut berubah?
+  1. Domain apa yang dimodelkan enum/state ini?
+  2. Behavior apa yang berubah saat state berubah?
+  3. Impossible state apa yang dicegah?
 - Hands-on:
   Rebuild Home state/action behavior manual-first di iOS.
 - Done kalau:

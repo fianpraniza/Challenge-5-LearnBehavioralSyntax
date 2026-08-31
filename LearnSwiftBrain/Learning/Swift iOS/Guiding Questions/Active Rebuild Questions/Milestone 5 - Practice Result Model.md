@@ -8,6 +8,18 @@ When practice stops, produce structured result data that can be displayed or sav
 - practice result/session model files
 - any conversion into recap/history data
 
+
+## Deep Behavior Lens
+Use these checks while working through this milestone:
+
+- **Domain modeling:** what real app situation is this code representing?
+- **Representation:** why is this represented with enum, struct, state, function, list, service, or persistence?
+- **Behavior:** what UI/action/result changes when this value changes?
+- **Invariant / impossible state:** what invalid condition should the code prevent?
+- **Tradeoff:** what does original Tiempo choose, and what do we simplify for iOS learning?
+- **Runtime:** what code is declared, what code executes, and when?
+- **Artifact evidence:** what proves the feature works?
+
 ## Guiding Questions
 ### 1. Original behavior question
 - What result data does original Tiempo create after practice ends?
