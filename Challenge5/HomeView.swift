@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Combine
 
 enum PracticeStatus {
     case ready
@@ -43,6 +44,7 @@ enum PracticeStatus {
 struct HomeView: View {
     @State var practiceStatus: PracticeStatus = .ready /// data atau state utama
     @State var elapsedSeconds: Int = 0
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect() /// publisher thick
     
     var body: some View {
         ZStack {
@@ -147,12 +149,6 @@ struct HomeView: View {
                     .buttonStyle(.plain)
                     .foregroundStyle(.black)
                     .background(Color.orange, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
-                    
-                    Button {
-                        elapsedSeconds += 1
-                    } label: {
-                        Text("+1 sec")
-                    }
 
 
                     if practiceStatus == .practiceStarted || practiceStatus == .paused {
@@ -178,6 +174,11 @@ struct HomeView: View {
                     .foregroundStyle(.white.opacity(0.45))
             }
             .padding(24)
+        }
+        .onReceive(timer) { _ in /// receive and closure thick
+            if practiceStatus == .practiceStarted {
+                elapsedSeconds += 1
+            }
         }
     }
 }
