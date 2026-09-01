@@ -17,26 +17,26 @@ enum PracticeStatus {
     var title: String {
         switch self {
         case .ready:
-            return "Tap to started"
+            return "Ready to start"
         case .practiceStarted:
-            return "Pause"
+            return "Practice Running"
         case .paused:
-            return "Resume"
+            return "Paused"
         case .finished:
-            return "Back to Home"
+            return "Finished"
         }
     }
     
     var buttonTitle: String {
         switch self {
         case .ready:
-            return "Practice Started"
+            return "Start Practice"
         case .practiceStarted:
-            return "Paused"
+            return "Pause"
         case .paused:
             return "Resume"
         case .finished:
-            return "Done"
+            return "Back to Home"
         }
     }
 }
@@ -130,6 +130,8 @@ struct HomeView: View {
 
                 VStack(spacing: 12) {
                     Button { /// block action button
+//                        print("Primary button tapped. Current status:", practiceStatus)
+                        
                         switch practiceStatus {
                         case .ready:
                             practiceStatus = .practiceStarted
@@ -139,7 +141,10 @@ struct HomeView: View {
                             practiceStatus = .practiceStarted
                         case .finished:
                             practiceStatus = .ready
+                            elapsedSeconds = 0
                         }
+                        
+//                        print("New status:", practiceStatus)
                     } label: { /// block label button
                         Text(practiceStatus.buttonTitle)
                             .font(.headline)
@@ -176,8 +181,10 @@ struct HomeView: View {
             .padding(24)
         }
         .onReceive(timer) { _ in /// receive and closure thick
+//            print("Timer tick received. Current status:", practiceStatus)
             if practiceStatus == .practiceStarted {
                 elapsedSeconds += 1
+//                print("Elapsed seconds:", elapsedSeconds)
             }
         }
     }
