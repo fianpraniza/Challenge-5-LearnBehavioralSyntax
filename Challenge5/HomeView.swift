@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Combine
 
 enum PracticeStatus {
     case ready
@@ -43,8 +42,7 @@ enum PracticeStatus {
 
 struct HomeView: View {
     @State var practiceStatus: PracticeStatus = .ready /// data atau state utama
-    @State var elapsedSeconds: Int = 0
-    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect() /// publisher thick
+    let onStartPractice: () -> Void /// closure property untuk mengirim kabar ke rootview, () -> void dia tidak butuh input dan tidak mengembalikan output
     
     var body: some View {
         ZStack {
@@ -115,7 +113,6 @@ struct HomeView: View {
                             Text("Timer")
                                 .font(.caption)
                                 .foregroundStyle(.white.opacity(0.55))
-                            Text("\(elapsedSeconds)s")
                                 .font(.headline)
                                 .foregroundStyle(.white)
                         }
@@ -131,17 +128,18 @@ struct HomeView: View {
                 VStack(spacing: 12) {
                     Button { /// block action button
 //                        print("Primary button tapped. Current status:", practiceStatus)
-                        
+                        /// cek status sebelum di tap dan action pada saat di tap
                         switch practiceStatus {
                         case .ready:
                             practiceStatus = .practiceStarted
+                            onStartPractice() /// closure/action/sumber event to practice scren
                         case .practiceStarted:
                             practiceStatus = .paused
                         case .paused:
                             practiceStatus = .practiceStarted
                         case .finished:
                             practiceStatus = .ready
-                            elapsedSeconds = 0
+//                            elapsedSeconds = 0
                         }
                         
 //                        print("New status:", practiceStatus)
@@ -180,16 +178,9 @@ struct HomeView: View {
             }
             .padding(24)
         }
-        .onReceive(timer) { _ in /// receive and closure thick
-//            print("Timer tick received. Current status:", practiceStatus)
-            if practiceStatus == .practiceStarted {
-                elapsedSeconds += 1
-//                print("Elapsed seconds:", elapsedSeconds)
-            }
-        }
     }
 }
 
 #Preview {
-    HomeView()
+    HomeView(onStartPractice: {})
 }
