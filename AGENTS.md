@@ -20,6 +20,12 @@ The workflow is intentionally:
 
 Prefer feature milestones over day-by-day plans. For Tiempo iOS, each milestone should start from original Tiempo source behavior/syntax, then rebuild a working iOS feature/screen manual-first. Skeleton-only tasks should not be treated as completed feature artifacts unless explicitly scoped as setup.
 
+Learning boundary rule:
+- Prototype drives the learning; learning must not delay the prototype.
+- Learn each concept only deep enough to explain, predict, and rebuild the behavior required by the current milestone.
+- Every milestone/session should define behavior target, required concepts, proof of understanding, out-of-scope topics, output, and stop rule/timebox.
+- If a topic is interesting but not needed for the current prototype increment, place it in Parking Lot instead of blocking progress.
+
 Current milestone shape:
 - Phase 1 — Working Core Practice Flow: Home Feature, Practice Start Flow, Practice Timer, Pause/Resume/Stop, Practice Result Model, Recap Screen.
 - Phase 2 — Saved Practice: History List, Persistence.
@@ -107,6 +113,7 @@ Key files:
 - `08 - Learning Session Protocol.md`
 - `09 - Artifact Rules.md`
 - `10 - Cara Main Belajar dengan Hermes.md`
+- `11 - Session Start Template.md`
 
 ### Active rebuild guiding questions
 Use these first when planning learning sessions:

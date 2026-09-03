@@ -3,6 +3,17 @@
 ## Goal
 Display the completed practice result as a recap screen.
 
+
+## Learning Boundary
+- **Behavior Target:** Completed practice result appears as readable recap UI.
+- **Required Concepts:** data passing, struct/display formatting, computed summary, view composition.
+- **Must Understand:** Result data flows into Recap; display text is derived from model.
+- **Proof of Understanding:** Fian can explain raw data vs display meaning and rebuild recap from result.
+- **Out of Scope:** History, persistence, advanced charts, complex feedback engine.
+- **Output:** Recap screen displays completed practice result.
+- **Stop Rule / Timebox:** Stop when recap shows result and flow is traceable.
+- **Parking Lot:** deeper questions that do not block this output.
+
 ## Original Tiempo Source to Inspect
 - `Features/Recap/Model/RecapModel.swift`
 - `Features/Recap/View/RecapView.swift`

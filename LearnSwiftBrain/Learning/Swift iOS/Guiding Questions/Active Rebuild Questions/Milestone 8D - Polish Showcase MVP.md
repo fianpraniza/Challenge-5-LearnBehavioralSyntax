@@ -3,6 +3,17 @@
 ## Goal
 Integrate and polish the strongest working Tiempo iOS flow into a presentable MVP/showcase artifact.
 
+
+## Learning Boundary
+- **Behavior Target:** Integrated Tiempo iOS flow is coherent enough to demo.
+- **Required Concepts:** integration, minimal refactor, UI polish, verification checklist.
+- **Must Understand:** Working behaviors connect into one explainable user flow.
+- **Proof of Understanding:** Fian can demo and explain tradeoffs/deferred scope honestly.
+- **Out of Scope:** Perfect UI, complete original parity, advanced features not needed for demo.
+- **Output:** 30–60 second showcase flow works.
+- **Stop Rule / Timebox:** Stop when demo flow is stable and explainable.
+- **Parking Lot:** deeper questions that do not block this output.
+
 ## Original Tiempo Source to Inspect
 - final user flow across Home, Practice, Recap, History
 - UI/copy patterns worth adapting

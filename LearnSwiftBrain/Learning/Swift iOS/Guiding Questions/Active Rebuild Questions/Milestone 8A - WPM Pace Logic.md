@@ -3,6 +3,17 @@
 ## Goal
 Add simple speaking pace feedback inspired by original Tiempo WPM behavior.
 
+
+## Learning Boundary
+- **Behavior Target:** Practice result includes simple WPM/pace feedback.
+- **Required Concepts:** pure function, numeric calculation, guard edge cases, enum/category feedback.
+- **Must Understand:** Input duration/word count produces WPM and pace label/feedback.
+- **Proof of Understanding:** Fian can calculate, predict edge cases, and rebuild pure logic without UI.
+- **Out of Scope:** Speech recognition, audio processing, advanced analytics, ML scoring.
+- **Output:** WPM/pace logic works with manual/simulated input.
+- **Stop Rule / Timebox:** Stop when calculation is correct enough for MVP.
+- **Parking Lot:** deeper questions that do not block this output.
+
 ## Original Tiempo Source to Inspect
 - `WPMCalculator.swift`
 - practice models that store words/WPM/pace

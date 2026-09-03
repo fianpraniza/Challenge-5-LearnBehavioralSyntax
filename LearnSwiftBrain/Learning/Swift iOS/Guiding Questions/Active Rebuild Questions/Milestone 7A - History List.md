@@ -3,6 +3,17 @@
 ## Goal
 Show previous practice sessions in a simple History list.
 
+
+## Learning Boundary
+- **Behavior Target:** Previous practice results appear in a list.
+- **Required Concepts:** array, Identifiable/id, ForEach, list row view, empty state.
+- **Must Understand:** Collection data drives repeated UI; identity lets SwiftUI track rows.
+- **Proof of Understanding:** Fian can explain identity and predict UI changes when array changes.
+- **Out of Scope:** Persistence, filtering/search, edit/delete, complex sorting UI.
+- **Output:** History list shows sample/current results.
+- **Stop Rule / Timebox:** Stop when list behavior works before adding storage.
+- **Parking Lot:** deeper questions that do not block this output.
+
 ## Original Tiempo Source to Inspect
 - History feature files in original Tiempo
 - `PracticeModels.swift` / persisted session model usage

@@ -47,6 +47,27 @@ Original Tiempo feature/code
 → mechanics explanation
 ```
 
+## Global Learning Boundary
+Prototype drives the learning. Learning must not delay the prototype.
+
+Pelajari setiap konsep hanya sedalam yang diperlukan untuk:
+1. **Explain** — menjelaskan behavior dengan kata-kata sendiri.
+2. **Predict** — memprediksi efek perubahan kecil pada kode.
+3. **Rebuild** — membuat ulang behavior serupa secara manual.
+
+Kalau tiga bukti itu sudah tercapai untuk behavior milestone, stop ngulik konsep itu dan lanjut build/milestone berikutnya.
+
+Setiap sesi milestone harus punya:
+- **Behavior Target** — behavior aplikasi apa yang mau dipahami/dibangun.
+- **Required Concepts** — konsep minimum yang diperlukan untuk behavior itu.
+- **Must Understand** — alur minimum yang harus bisa dijelaskan.
+- **Proof of Understanding** — explain, predict, rebuild.
+- **Out of Scope** — hal yang sengaja tidak dipelajari sekarang.
+- **Output** — increment prototype yang harus bekerja.
+- **Stop Rule / Timebox** — kapan harus berhenti ngulik dan lanjut.
+
+Jika Fian atau AI mulai masuk ke detail yang tidak dibutuhkan untuk output milestone, pindahkan ke **Parking Lot**, bukan dibahas habis saat itu.
+
 ## MVP Direction
 First iOS MVP:
 - Home screen.
@@ -127,11 +148,25 @@ For each feature milestone:
 2. Identify the domain being modeled, not only the syntax being used.
 3. Identify behavior + Swift/SwiftUI syntax/patterns used.
 4. Ask the deep behavior lens and six guiding question types above.
-5. Decide the iOS adaptation.
-6. Fian rebuilds the core behavior manually.
-7. Verify the feature/screen works, or mark it explicitly as not verified.
-8. Explain execution mechanics and engineering tradeoff.
-9. Record observation in Daily Log / Concept Note / Artifact Note if worth it.
+5. Define the learning boundary: required concepts, out of scope, output, stop rule.
+6. Decide the iOS adaptation.
+7. Fian rebuilds the core behavior manually.
+8. Verify the feature/screen works, or mark it explicitly as not verified.
+9. Explain execution mechanics and engineering tradeoff.
+10. Move deeper-but-not-needed questions to Parking Lot.
+11. Record observation in Daily Log / Concept Note / Artifact Note if worth it.
+
+## Parking Lot Rule
+Parking Lot is for questions that are interesting but not required to finish the current prototype increment.
+
+Examples:
+- compiler internals of `@State`,
+- full SwiftUI diffing/rendering internals,
+- complete MVVM architecture,
+- Combine/concurrency internals before the timer/speech milestone needs them,
+- production-grade persistence before simple save/load behavior works.
+
+Parking Lot questions are valid, but they should not block milestone output.
 
 ## Open Rebuild Questions
 - [ ] Apa core behavior dari Tiempo yang paling penting untuk iOS MVP?

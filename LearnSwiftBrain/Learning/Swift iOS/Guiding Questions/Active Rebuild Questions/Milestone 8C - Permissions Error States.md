@@ -3,6 +3,17 @@
 ## Goal
 Represent permission and error states clearly in the iOS app.
 
+
+## Learning Boundary
+- **Behavior Target:** Blocked permission/error conditions become visible recoverable UI states.
+- **Required Concepts:** permission checks, enum error/block state, conditional UI, recovery action.
+- **Must Understand:** Unavailable permission/error maps to state; UI shows what user can do next.
+- **Proof of Understanding:** Fian can explain blocked behavior as state, not just crash/error.
+- **Out of Scope:** Every edge case, system settings automation complexity, production support copy.
+- **Output:** Permission/error states are visible and recoverable enough for MVP.
+- **Stop Rule / Timebox:** Stop when major blocked states are represented.
+- **Parking Lot:** deeper questions that do not block this output.
+
 ## Original Tiempo Source to Inspect
 - original permission handling files
 - Home status/error state files

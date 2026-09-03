@@ -24,6 +24,8 @@ Learning/
       07 - Obsidian Second Brain Rules.md
       08 - Learning Session Protocol.md
       09 - Artifact Rules.md
+      10 - Cara Main Belajar dengan Hermes.md
+      11 - Session Start Template.md
     Daily Logs/
     Concepts/
     Errors & Fixes/

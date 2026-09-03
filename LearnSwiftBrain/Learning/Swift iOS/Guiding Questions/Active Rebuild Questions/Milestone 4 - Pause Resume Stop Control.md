@@ -3,6 +3,17 @@
 ## Goal
 Make practice controls behave as a clear state machine: start → pause → resume → stop.
 
+
+## Learning Boundary
+- **Behavior Target:** Practice controls allow only valid transitions: active, paused, stopped/finished.
+- **Required Concepts:** enum state machine, switch, functions pause/resume/stop, valid action visibility.
+- **Must Understand:** Current state determines valid actions; actions transition to next valid state.
+- **Proof of Understanding:** Fian can explain impossible states and predict action results per state.
+- **Out of Scope:** Formal state-machine libraries, advanced architecture, persistence, recap UI details.
+- **Output:** Pause/resume/stop controls work and invalid actions are not shown.
+- **Stop Rule / Timebox:** Stop when valid transitions work and are explainable.
+- **Parking Lot:** deeper questions that do not block this output.
+
 ## Original Tiempo Source to Inspect
 - `Features/Practice/ViewModel/PracticeViewModel.swift`
 - practice state/action methods

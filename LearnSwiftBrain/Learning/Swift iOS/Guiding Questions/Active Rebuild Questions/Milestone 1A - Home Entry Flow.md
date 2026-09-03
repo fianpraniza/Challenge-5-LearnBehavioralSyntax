@@ -5,6 +5,17 @@ Part of [[Milestone 1 - Home Feature Rebuild]].
 ## Goal
 Make the iOS app launch into a meaningful Tiempo Home screen, not an empty setup skeleton.
 
+
+## Learning Boundary
+- **Behavior Target:** App launch opens the intended Tiempo iOS Home screen.
+- **Required Concepts:** @main App, WindowGroup, RootView, view composition.
+- **Must Understand:** App entry creates root view; root decides the first visible screen.
+- **Proof of Understanding:** Fian can trace launch → RootView → HomeView and change first screen intentionally.
+- **Out of Scope:** Navigation architecture, coordinator/router, lifecycle internals, full app architecture.
+- **Output:** App opens directly to Home.
+- **Stop Rule / Timebox:** Stop when launch-to-Home flow is traceable and working.
+- **Parking Lot:** deeper questions that do not block this output.
+
 ## Original Tiempo Source to Inspect
 - `KeynoteCompanionMacosApp.swift`
 - `App/RootView.swift`

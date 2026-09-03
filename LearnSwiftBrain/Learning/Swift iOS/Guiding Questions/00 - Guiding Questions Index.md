@@ -17,6 +17,12 @@ Original Tiempo feature/code
 → mechanics explanation
 ```
 
+Learning boundary:
+```text
+Learn only deep enough to explain, predict, and rebuild the behavior required by the prototype.
+Prototype drives the learning. Learning does not delay the prototype.
+```
+
 ## Two Types of Guiding Questions
 
 ### 1. Active Rebuild Questions
@@ -51,6 +57,16 @@ Question → Hypothesis → Hands-on experiment → Observation → My answer �
 ```markdown
 ## Feature Milestone
 Feature:
+
+## Learning Boundary
+- Behavior Target:
+- Required Concepts:
+- Must Understand:
+- Proof of Understanding: explain, predict, rebuild.
+- Out of Scope:
+- Output:
+- Stop Rule / Timebox:
+- Parking Lot:
 
 ## Deep behavior lens
 - Domain modeling: what real app situation is represented?

@@ -3,6 +3,17 @@
 ## Goal
 Explore real speech/audio input only after core practice flow and simple pace logic are stable.
 
+
+## Learning Boundary
+- **Behavior Target:** App receives speech/audio-derived text or updates.
+- **Required Concepts:** permissions, async updates, service boundary, state updates from external system.
+- **Must Understand:** External audio/speech emits async data; service updates state; UI reacts.
+- **Proof of Understanding:** Fian can explain async external input path and handle basic failure.
+- **Out of Scope:** Audio DSP internals, custom ML, production speech accuracy tuning.
+- **Output:** Small speech/audio experiment updates app state.
+- **Stop Rule / Timebox:** Stop when minimal pipeline works or blocker is understood.
+- **Parking Lot:** deeper questions that do not block this output.
+
 ## Original Tiempo Source to Inspect
 - speech recognition service/files
 - audio capture service/files

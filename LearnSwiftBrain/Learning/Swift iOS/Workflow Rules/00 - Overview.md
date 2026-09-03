@@ -49,6 +49,7 @@ Tidak ada MVVM/Clean Architecture/Coordinator/DI secara default. Architecture me
 - [[08 - Learning Session Protocol]] — alur harian/sesi belajar.
 - [[09 - Artifact Rules]] — aturan artifact/prototype/showcase.
 - [[10 - Cara Main Belajar dengan Hermes]] — best practice cara belajar harian: brief, task, manual coding, stuck handling, review, dan catatan.
+- [[11 - Session Start Template]] — template wajib untuk mulai sesi milestone agar scope, out-of-scope, proof, output, dan stop rule jelas.
 
 ## How to Use These Files with AI Agents
 Attach file sesuai kebutuhan:
@@ -65,9 +66,19 @@ Use case:
 Attach:
 - `04 - Learning Coach.md`
 - `08 - Learning Session Protocol.md`
+- `11 - Session Start Template.md`
 
 Use case:
 > “Gua punya 45 menit dan mau belajar SwiftUI layout. Scope-in sesi ini.”
+
+### Starting a Tiempo milestone session
+Attach:
+- `08 - Learning Session Protocol.md`
+- `10 - Cara Main Belajar dengan Hermes.md`
+- `11 - Session Start Template.md`
+
+Use case:
+> “Mulai session milestone pakai template. Milestone: 1B Home State Drives UI.”
 
 ### Coding dengan Codex / AI coding agent
 Attach:

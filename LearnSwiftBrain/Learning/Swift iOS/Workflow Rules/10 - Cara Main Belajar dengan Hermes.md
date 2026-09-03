@@ -12,6 +12,12 @@ Best practice default:
 Brief dulu → task kecil → Fian coba manual → tanya saat stuck → review bareng → catat kalau worth it
 ```
 
+Global boundary:
+```text
+Prototype drives the learning. Learning doesn't delay the prototype.
+Pelajari konsep hanya sedalam yang diperlukan untuk explain, predict, dan rebuild behavior milestone.
+```
+
 Jangan langsung ceramah panjang. Jangan juga langsung lempar task tanpa konteks.
 
 Balance terbaik:
@@ -30,9 +36,10 @@ Hermes harus memberi:
 1. Scope singkat.
 2. Mental model pendek.
 3. Deep guiding questions: domain modeling, representation, behavior, invariant, tradeoff, runtime, artifact evidence.
-4. Task manual-first.
-5. Stop point / done criteria.
-6. Instruksi kapan Fian sebaiknya bertanya.
+4. Learning boundary: required concepts, out of scope, proof, output, stop rule.
+5. Task manual-first.
+6. Stop point / done criteria.
+7. Instruksi kapan Fian sebaiknya bertanya.
 
 Format:
 ```text
@@ -42,6 +49,10 @@ Domain Being Modeled
 Behavior Target
 Syntax/Pattern to Study
 Engineering Tradeoff
+Required Concepts
+Out of Scope
+Proof of Understanding
+Stop Rule / Timebox
 Manual Task
 Working Stop Point
 Kapan tanya Hermes
@@ -61,6 +72,10 @@ Hari ini fokusnya:
 - Behavior target:
 - Syntax/pattern to study:
 - Engineering tradeoff:
+- Required concepts:
+- Out of scope:
+- Proof of understanding:
+- Stop rule / timebox:
 - Guiding questions:
 - Hands-on:
 - Done kalau feature/screen works:
@@ -75,6 +90,10 @@ Hari ini fokus:
 - Behavior target: Home screen content and primary action are driven by state
 - Syntax/pattern to study: enum, computed property, switch, Button action closure
 - Engineering tradeoff: enum + @State sederhana dulu, ViewModel/router nanti kalau behavior menuntut
+- Required concepts: enum state/action, computed property, @State, Button closure, switch
+- Out of scope: compiler internals, full SwiftUI rendering internals, MVVM lengkap, router kompleks, polish animasi
+- Proof of understanding: Fian bisa explain, predict efek perubahan case/action, dan rebuild behavior manual
+- Stop rule / timebox: kalau Home behavior working + bisa explain/predict/rebuild, lanjut milestone berikutnya
 - Guiding questions:
   1. Domain apa yang dimodelkan enum/state ini?
   2. Behavior apa yang berubah saat state berubah?
@@ -115,6 +134,11 @@ Fokus: state bisa mengubah title dan button.
 ```
 
 Hermes jangan langsung kasih full code kecuali Fian minta.
+
+Jika Fian mulai kebablasan ngulik konsep yang tidak wajib untuk output milestone, Hermes harus bilang singkat:
+```text
+Ini menarik, tapi out of scope untuk milestone sekarang. Kita taruh Parking Lot dulu supaya prototype tetap maju.
+```
 
 ### 4. Fian coding manual
 Ini bagian utama sesi belajar.

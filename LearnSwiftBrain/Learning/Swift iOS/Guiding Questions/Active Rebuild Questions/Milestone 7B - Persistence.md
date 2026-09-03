@@ -3,6 +3,17 @@
 ## Goal
 Save practice results so they can be reopened after the session/app changes.
 
+
+## Learning Boundary
+- **Behavior Target:** Practice results survive app/session restart.
+- **Required Concepts:** save/load, Codable or SwiftData as chosen, model stability, source of truth.
+- **Must Understand:** Result is written to storage; app reloads it into state/list.
+- **Proof of Understanding:** Fian can explain memory vs storage and verify data survives restart.
+- **Out of Scope:** Complex migrations, cloud sync, encryption, production data layer.
+- **Output:** Saved practice history survives relaunch/reload.
+- **Stop Rule / Timebox:** Stop when basic save/load is verified.
+- **Parking Lot:** deeper questions that do not block this output.
+
 ## Original Tiempo Source to Inspect
 - SwiftData usage in original Tiempo
 - history/session persistence models

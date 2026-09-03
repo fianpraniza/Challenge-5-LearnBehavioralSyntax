@@ -16,6 +16,17 @@ Original Tiempo Home feature/code
 → mechanics explanation
 ```
 
+
+## Learning Boundary
+- **Behavior Target:** Home screen menampilkan status/CTA practice berdasarkan state.
+- **Required Concepts:** enum state/action, computed property, @State, Button closure, switch, simple view composition.
+- **Must Understand:** Home state → UI text/action → button tap → state/action update → UI re-renders
+- **Proof of Understanding:** Home screen working; Fian can explain/predict/rebuild state-driven Home behavior.
+- **Out of Scope:** SwiftUI rendering internals, compiler internals of property wrappers, full MVVM/router, polish animation, macOS Keynote automation.
+- **Output:** Working Tiempo iOS Home feature.
+- **Stop Rule / Timebox:** Stop when Home behavior works and Fian can explain, predict, rebuild it.
+- **Parking Lot:** deeper questions that do not block this output.
+
 ## Original Tiempo Source to Inspect
 - `Features/Home/View/HomeView.swift`
 - `Features/Home/View/HomeStatusContentView.swift`

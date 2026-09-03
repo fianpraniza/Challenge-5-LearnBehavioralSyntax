@@ -36,6 +36,9 @@ Scope sesi ini:
 - Behavior to rebuild:
 - Syntax/pattern to study:
 - Engineering tradeoff to notice:
+- Required concepts:
+- Out of scope:
+- Stop rule / timebox:
 - Hands-on:
 - Manual-first constraint:
 - Codex:
@@ -51,6 +54,9 @@ Scope sesi ini:
 - Behavior to rebuild: Home state drives title/subtitle/button/action.
 - Syntax/pattern to study: enum, computed property, switch, Button action closure.
 - Engineering tradeoff to notice: simple `@State` now vs ViewModel later when behavior grows.
+- Required concepts: enum state/action, computed property, `@State`, Button closure, `switch`.
+- Out of scope: SwiftUI rendering internals, compiler details of property wrappers, full MVVM/router, polish animation.
+- Stop rule / timebox: stop when Fian can explain, predict, and rebuild the Home behavior and the screen works.
 - Hands-on: Fian rebuilds the iOS Home state/action behavior manually.
 - Manual-first: lu tulis semua function manual.
 - Codex: belum perlu kecuali review/debug.
@@ -58,6 +64,15 @@ Scope sesi ini:
 ```
 
 For Tiempo rebuild sessions, do not start from an isolated concept unless Fian explicitly asks. Start from the current feature milestone and pull concepts from the original code/behavior.
+
+## Learning Boundary Rule
+For every milestone session, Hermes must protect scope:
+
+```text
+Learn only deep enough to explain, predict, and rebuild the behavior required by the prototype.
+```
+
+Before going deep, define what is out of scope. If a question is interesting but not required for the current feature output, put it in Parking Lot and continue the prototype.
 
 ## 3. Learn Phase
 Mentor menjelaskan konsep dengan format:
@@ -140,6 +155,12 @@ Sesi selesai jika minimal salah satu tercapai:
 - 1 increment app jalan.
 - 1 error dipahami/fix.
 - Next tiny step jelas.
+
+For feature milestones, do not keep digging after the behavior already meets the proof:
+- Fian can explain the flow.
+- Fian can predict a small code change.
+- Fian can rebuild the behavior manually.
+- Prototype increment works or is explicitly marked not verified.
 
 Tidak harus selalu selesai app besar.
 

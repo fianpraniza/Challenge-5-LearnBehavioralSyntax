@@ -3,6 +3,17 @@
 ## Goal
 Connect Home to the beginning of a practice session so the app starts behaving like a presentation-practice companion.
 
+
+## Learning Boundary
+- **Behavior Target:** User starts a practice session from Home and app enters practice flow.
+- **Required Concepts:** function, state transition, optional navigation/callback, initial session data.
+- **Must Understand:** Tap expresses intent; start function initializes practice state/data and moves flow forward.
+- **Proof of Understanding:** Fian can explain start intent vs actual session creation and rebuild simple start flow.
+- **Out of Scope:** Full timer internals, persistence, recap, speech/audio, complex navigation architecture.
+- **Output:** Start Practice leads to active practice area/state.
+- **Stop Rule / Timebox:** Stop when start flow works without building later milestone behavior.
+- **Parking Lot:** deeper questions that do not block this output.
+
 ## Original Tiempo Source to Inspect
 - Home primary action handling
 - `Features/Practice/ViewModel/PracticeViewModel.swift`

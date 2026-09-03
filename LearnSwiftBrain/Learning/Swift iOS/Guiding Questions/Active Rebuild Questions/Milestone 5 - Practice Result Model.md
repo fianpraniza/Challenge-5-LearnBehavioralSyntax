@@ -3,6 +3,17 @@
 ## Goal
 When practice stops, produce structured result data that can be displayed or saved later.
 
+
+## Learning Boundary
+- **Behavior Target:** Stopping practice produces stable result data.
+- **Required Concepts:** struct model, let properties, initializer, Date/duration fields, simple transformation.
+- **Must Understand:** Running session data becomes immutable-ish result data for recap/history.
+- **Proof of Understanding:** Fian can explain running session vs finished result and rebuild model manually.
+- **Out of Scope:** SwiftData, persistence migration, analytics, full speech metrics.
+- **Output:** PracticeResult is created after stop.
+- **Stop Rule / Timebox:** Stop when result model captures needed current data.
+- **Parking Lot:** deeper questions that do not block this output.
+
 ## Original Tiempo Source to Inspect
 - `Features/Practice/Model/PracticeModels.swift`
 - practice result/session model files

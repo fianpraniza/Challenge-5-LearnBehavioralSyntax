@@ -5,6 +5,17 @@ Part of [[Milestone 1 - Home Feature Rebuild]].
 ## Goal
 Use explicit Home state to drive visible Home UI content: title, subtitle, button text, icon/status, and available action.
 
+
+## Learning Boundary
+- **Behavior Target:** Home title/subtitle/button/icon/visibility changes from Home state.
+- **Required Concepts:** enum, @State, computed property, switch, Text/Button reading state.
+- **Must Understand:** State value is source; computed properties derive UI; changing state updates visible UI.
+- **Proof of Understanding:** Fian can explain, predict, and rebuild state-driven title/subtitle/button changes.
+- **Out of Scope:** Advanced SwiftUI diffing, ViewModel, custom design system, animations.
+- **Output:** Home UI visibly changes when state changes.
+- **Stop Rule / Timebox:** Stop when state-driven UI works and can be explained.
+- **Parking Lot:** deeper questions that do not block this output.
+
 ## Original Tiempo Source to Inspect
 - `Features/Home/Model/HomeViewState.swift`
 - `Features/Home/View/HomeStatusContentView.swift`

@@ -3,6 +3,17 @@
 ## Goal
 Show elapsed practice time that updates while a session is active.
 
+
+## Learning Boundary
+- **Behavior Target:** Elapsed practice time updates while session is active.
+- **Required Concepts:** timer/event source, @State or observable state, onReceive/Task as chosen, date/elapsed calculation.
+- **Must Understand:** Timer emits/change happens over time; elapsed state changes; UI re-renders repeatedly.
+- **Proof of Understanding:** Fian can explain timer start/stop/update and prevent obvious double-running.
+- **Out of Scope:** Combine internals, concurrency internals, background execution, precision optimization.
+- **Output:** Timer visibly runs during practice.
+- **Stop Rule / Timebox:** Stop when timer works and Fian can trace repeated updates.
+- **Parking Lot:** deeper questions that do not block this output.
+
 ## Original Tiempo Source to Inspect
 - `Features/Practice/ViewModel/PracticeViewModel.swift`
 - any timer/elapsed time logic in the practice feature

@@ -5,6 +5,17 @@ Part of [[Milestone 1 - Home Feature Rebuild]].
 ## Goal
 Make the Home primary button produce clear app behavior: update Home state or move toward Practice Start Flow.
 
+
+## Learning Boundary
+- **Behavior Target:** Home primary button maps user tap to valid Home/practice action.
+- **Required Concepts:** action enum, computed primaryAction, function parameter, switch, Button closure.
+- **Must Understand:** Button stores closure; tap sends action; handler switches action; state/flow changes.
+- **Proof of Understanding:** Fian can predict which action runs per state and rebuild handler manually.
+- **Out of Scope:** Async flows, router unless needed, full practice screen implementation.
+- **Output:** Primary button action produces visible behavior.
+- **Stop Rule / Timebox:** Stop when action routing works for current Home states.
+- **Parking Lot:** deeper questions that do not block this output.
+
 ## Original Tiempo Source to Inspect
 - `Features/Home/View/HomeView.swift`
 - `Features/Home/View/HomeStatusContentView.swift`
