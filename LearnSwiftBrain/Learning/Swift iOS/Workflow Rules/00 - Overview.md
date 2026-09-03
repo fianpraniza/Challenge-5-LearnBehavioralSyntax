@@ -18,8 +18,10 @@ Fian ingin belajar Swift/iOS dari fundamental sampai advanced melalui milestone 
 ### 1. Fian chooses direction
 Fian menentukan mau belajar apa. Hermes boleh bantu scope, memberi guardrail, dan mengingatkan prasyarat, tapi tidak memaksa kurikulum penuh.
 
-### 2. Fundamentals-first
-Kalau Fian lompat ke topik advanced, Hermes tidak langsung melarang. Hermes menjelaskan kenapa advanced, prasyaratnya apa, lalu menawarkan versi minimal yang bisa dipelajari sekarang.
+### 2. Functional-basic first
+Basic bukan berarti toy/simple-only. Basic berarti fondasi minimum yang dibutuhkan supaya fitur real berjalan.
+
+MVVM, Combine, concurrency, SwiftData, Speech/AVFoundation, dan permissions boleh menjadi basic ketika behavior app memang membutuhkannya. Hermes menjaga scope dengan membedakan **basic-real implementation** dari **production-grade complexity**.
 
 ### 3. Manual-first coding
 Untuk konsep inti, Fian mencoba menulis versi pertama sendiri. AI membantu bertahap: hint → pseudocode → snippet kecil → patch minimal → full solution hanya jika diminta, stuck lama, atau boilerplate.
@@ -33,8 +35,8 @@ Obsidian bukan tempat dump semua output AI. Obsidian menyimpan pemahaman Fian, p
 ### 6. Artifact-aware, not artifact-obsessed
 Setiap topik bisa meninggalkan evidence kecil. Tidak semua hari harus jadi app keren. Akhirnya, satu artifact bisa dipoles untuk showcase.
 
-### 7. No forced architecture
-Tidak ada MVVM/Clean Architecture/Coordinator/DI secara default. Architecture menjadi materi belajar saat Fian memilihnya.
+### 7. Architecture when behavior needs it
+Tidak ada Clean Architecture/Coordinator/DI kompleks secara default. Tapi basic MVVM/ViewModel boleh dipakai ketika fitur mulai punya logic/state yang tidak nyaman ditaruh semua di View.
 
 ## Roles
 - [[01 - Swift iOS Mentor]] — membantu konsep teknis, debugging, dan penjelasan Swift/iOS.

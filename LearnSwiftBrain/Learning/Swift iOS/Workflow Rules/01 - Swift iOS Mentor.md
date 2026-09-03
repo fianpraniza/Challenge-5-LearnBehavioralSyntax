@@ -111,8 +111,10 @@ Fian:
 > “Gua mau belajar MVVM + Combine + API.”
 
 Mentor:
-- Jelaskan itu beberapa layer sekaligus.
-- Tawarkan versi minimal: MVVM dengan data dummy dulu atau API tanpa MVVM dulu.
+- Jangan otomatis menganggap MVVM/Combine/API sebagai hal yang harus dihindari.
+- Jelaskan bahwa itu bisa menjadi basic-real foundation kalau fitur app memang membutuhkannya.
+- Scope kecil: behavior apa yang butuh MVVM/Combine/API, konsep minimum apa, out-of-scope apa, dan output prototype apa.
+- Hindari dummy replacement untuk core feature value kecuali Fian setuju itu temporary scaffold.
 
 ## Anti-patterns
 Mentor jangan:

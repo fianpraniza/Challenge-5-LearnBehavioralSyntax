@@ -10,29 +10,28 @@ Obsidian ini berfungsi sebagai:
 - evidence progress belajar dan artifact/working apps.
 
 ## Current Focus
-Feature milestone path for Tiempo iOS Rebuild.
+Functional feature milestone path for Tiempo iOS Rebuild.
 
-Fian is learning Swift/iOS by rebuilding Tiempo iOS per feature, not by following a rigid day-by-day curriculum. Each milestone should produce a working feature/screen and include source-code reading from the original Tiempo app.
+Fian is learning Swift/iOS by rebuilding Tiempo iOS per feature, not by following a rigid day-by-day curriculum. Each milestone should produce a useful working feature/screen and include source-code reading from the original Tiempo app.
 
 Current path:
 ```text
-Phase 1 — Working Core Practice Flow
-1. Home Feature Rebuild
-2. Practice Start Flow
-3. Practice Timer
-4. Pause / Resume / Stop Control
-5. Practice Result Model
+Phase 1 — App Entry and Practice Flow
+1. Home Feature and State/Action Modeling
+2. Practice Flow Navigation/Callback
+
+Phase 2 — Real Practice Session
+3. Practice Session ViewModel + Timer/Controls
+4. Audio Recording + Speech Transcript
+
+Phase 3 — Result and Feedback
+5. Result Model + WPM/Filler From Transcript
 6. Recap Screen
 
-Phase 2 — Saved Practice
-7A. History List
-7B. Persistence
-
-Phase 3 — Speaking Coach Behavior
-8A. WPM / Pace Logic
-8B. Speech / Audio Pipeline
-8C. Permissions / Error States
-8D. Polish / Showcase MVP
+Phase 4 — Saved Practice and Robust MVP
+7. SwiftData History/Persistence
+8. Permissions/Error States
+9. Polish Showcase MVP
 ```
 
 ## Core Workflow
@@ -42,12 +41,13 @@ Start → Scope → Learn → Manual Code → Stuck Handling → Review/Debug �
 
 ## Main Principles
 - Fian memilih topik belajar; Hermes tidak memaksakan path terlalu kaku.
-- Fundamental-first: advanced boleh dieksplor, tapi prasyaratnya harus jelas.
+- Functional-basic: basic berarti minimum professional foundation required for real app behavior, bukan toy/simple-only.
 - Manual-first coding: Fian menulis core learning code sendiri.
 - Codex dipakai sebagai pair programmer, bukan pengganti belajar.
 - Obsidian approval-first: tidak ada write/edit tanpa approval target, action, dan content.
-- Artifact mengikuti topik, bukan memaksa app besar dari awal.
-- No forced MVVM / architecture di awal. Architecture dieksplor saat Fian memilihnya sebagai topik.
+- Artifact mengikuti functional Tiempo prototype; jangan menyederhanakan sampai core product value hilang.
+- MVVM, Combine, concurrency, SwiftData, Speech/AVFoundation, dan permissions boleh menjadi basic jika fitur real membutuhkannya.
+- No forced Clean Architecture / complex DI di awal. Architecture dipakai ketika behavior menuntut, bukan untuk gaya-gayaan.
 
 ## Workflow Rules
 - [[Workflow Rules/00 - Overview]]
@@ -61,18 +61,20 @@ Start → Scope → Learn → Manual Code → Stuck Handling → Review/Debug �
 - [[Workflow Rules/08 - Learning Session Protocol]]
 - [[Workflow Rules/09 - Artifact Rules]]
 - [[Workflow Rules/10 - Cara Main Belajar dengan Hermes]]
+- [[Workflow Rules/11 - Session Start Template]]
+- [[Workflow Rules/12 - Commit Message Convention]]
 
 ## Guiding Questions
 - [[Guiding Questions/00 - Guiding Questions Index]]
 
-Guiding Questions berisi milestone tracker dan pertanyaan eksplorasi untuk memahami execution mechanics Swift/iOS: bagaimana kode dieksekusi, state berubah, UI update, dan app berjalan dari awal sampai akhir.
+Guiding Questions berisi milestone tracker dan pertanyaan eksplorasi untuk memahami execution mechanics Swift/iOS: bagaimana kode dieksekusi, state berubah, UI update, framework/system event masuk ke app, dan app berjalan dari awal sampai akhir.
 
 ## Learning Areas
 ### Daily Logs
 Catatan sesi/hari belajar. Lihat folder [[Daily Logs]].
 
 ### Concepts
-Catatan konsep reusable seperti Optionals, Functions, SwiftUI State, Binding. Lihat folder [[Concepts]].
+Catatan konsep reusable seperti Optionals, Functions, SwiftUI State, Binding, MVVM, Combine, concurrency, SwiftData, Speech/AVFoundation. Lihat folder [[Concepts]].
 
 ### Errors & Fixes
 Catatan error yang worth saving. Lihat folder [[Errors & Fixes]].
@@ -81,9 +83,9 @@ Catatan error yang worth saving. Lihat folder [[Errors & Fixes]].
 Catatan app/prototype/showcase. Lihat folder [[Artifacts]].
 
 ## Open Questions
-- Original Tiempo Home syntax/pattern apa saja yang perlu dipahami sebelum lanjut rebuild?
-- Behavior Home mana yang harus dibawa ke iOS Milestone 1?
-- Apa done criteria agar Home feature dianggap working, bukan sekadar skeleton?
+- Original Tiempo syntax/pattern apa saja yang perlu dibawa ke iOS, dan mana yang macOS-only?
+- User journey functional Tiempo iOS seperti apa dari Home sampai Recap/History?
+- Kapan setiap professional-basic concept masuk karena fitur membutuhkannya?
 
 ## Next Tiny Step
-- Audit original Tiempo Home code, lalu tentukan versi Home feature iOS yang akan dibangun manual-first.
+- Finalize user journey Tiempo iOS, lalu mulai/lanjut milestone dengan Session Start Template.

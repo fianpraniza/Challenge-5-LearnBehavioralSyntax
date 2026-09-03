@@ -1,67 +1,17 @@
 # Milestone 1C - Home Primary Action Behavior
 
-Part of [[Milestone 1 - Home Feature Rebuild]].
+Part of [[Milestone 1 - Home Feature and State Action Modeling]].
 
-## Goal
-Make the Home primary button produce clear app behavior: update Home state or move toward Practice Start Flow.
+This is a small checkpoint inside Milestone 1, not a separate product milestone.
 
+Use it only when the current session needs a smaller Home scope.
 
 ## Learning Boundary
-- **Behavior Target:** Home primary button maps user tap to valid Home/practice action.
-- **Required Concepts:** action enum, computed primaryAction, function parameter, switch, Button closure.
-- **Must Understand:** Button stores closure; tap sends action; handler switches action; state/flow changes.
-- **Proof of Understanding:** Fian can predict which action runs per state and rebuild handler manually.
-- **Out of Scope:** Async flows, router unless needed, full practice screen implementation.
-- **Output:** Primary button action produces visible behavior.
-- **Stop Rule / Timebox:** Stop when action routing works for current Home states.
+- **Behavior Target:** keep this checkpoint focused on one Home behavior.
+- **Real Feature Requirement:** Home must remain a useful entry to Tiempo iOS.
+- **Required Concepts:** enum state/action, computed property, switch, Button closure, SwiftUI view rendering from state.
+- **Proof of Understanding:** explain, predict, rebuild.
+- **Out of Scope:** macOS Keynote automation, AppKit windowing, production architecture, unrelated feature work.
+- **Output:** one verified Home behavior increment.
+- **Stop Rule / Timebox:** stop when the checkpoint behavior works and can be explained.
 - **Parking Lot:** deeper questions that do not block this output.
-
-## Original Tiempo Source to Inspect
-- `Features/Home/View/HomeView.swift`
-- `Features/Home/View/HomeStatusContentView.swift`
-- `Features/Home/Model/HomeViewState.swift`
-- `Features/Home/ViewModel/HomeViewModel.swift`
-
-
-## Deep Behavior Lens
-Use these checks while working through this milestone:
-
-- **Domain modeling:** what real app situation is this code representing?
-- **Representation:** why is this represented with enum, struct, state, function, list, service, or persistence?
-- **Behavior:** what UI/action/result changes when this value changes?
-- **Invariant / impossible state:** what invalid condition should the code prevent?
-- **Tradeoff:** what does original Tiempo choose, and what do we simplify for iOS learning?
-- **Runtime:** what code is declared, what code executes, and when?
-- **Artifact evidence:** what proves the feature works?
-
-## Guiding Questions
-### 1. Original behavior question
-- What can the user do from the original Home screen?
-- What happens when the primary Home action is tapped?
-
-### 2. Original syntax/pattern question
-- How is primary action represented?
-- How does `handlePrimaryAction(_:)` or equivalent action handling work?
-
-### 3. Engineering tradeoff question
-- Why route through an action enum/function instead of putting all logic inside `Button`?
-- When is action routing useful, and when is it overkill?
-
-### 4. iOS adaptation question
-- Should Milestone 1 primary action only mutate local state, or start navigation toward Practice?
-
-### 5. Execution mechanics question
-- Button declared when → closure executed when → action handler called when → state/route changes where?
-
-### 6. Artifact/done question
-- Does tapping Home primary button produce visible, meaningful app behavior?
-
-## Manual-first Task
-- Add/adjust primary action for Home.
-- Route action through a small function or action enum if useful.
-- Verify visible behavior.
-
-## Done Criteria
-- [ ] Original Home action pattern inspected.
-- [ ] iOS Home primary action works.
-- [ ] Fian can explain declaration vs execution of `Button` closure.

@@ -144,26 +144,30 @@ Target MVP:
 ```text
 Home screen
 → Start Practice
-→ Timer runs
-→ Pause/Resume/Stop
+→ Practice screen with ViewModel-backed timer/controls when behavior grows
+→ Audio recording / speech transcript as real speaking input
+→ Result model with WPM/filler summary from transcript
 → Recap screen
+→ SwiftData history/persistence
 ```
 
-Later additions if ready:
-- manual/simulated WPM,
-- speech recognition,
-- audio recording,
-- history persistence,
-- SwiftData,
-- better recap UI.
+Functional-basic additions are part of the useful MVP when the feature needs them:
+- basic MVVM/ViewModel for session logic,
+- basic Combine/timer event flow,
+- basic concurrency/async callback flow,
+- basic Speech/AVFoundation transcript,
+- basic SwiftData save/load,
+- basic permission/error states.
 
 Deferred:
 - Keynote automation,
 - AppleScript / Apple Events,
 - AppKit floating overlay,
 - macOS window management,
-- full speech/audio pipeline from day one,
-- complex SwiftData migration.
+- production-grade audio DSP,
+- speech accuracy tuning,
+- complex SwiftData migration / CloudKit sync,
+- full production architecture.
 
 ## Artifact Note Template
 ```markdown

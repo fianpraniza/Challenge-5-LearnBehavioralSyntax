@@ -18,20 +18,27 @@ The workflow is intentionally:
 - artifact-aware,
 - architecture-neutral at the start.
 
-Prefer feature milestones over day-by-day plans. For Tiempo iOS, each milestone should start from original Tiempo source behavior/syntax, then rebuild a working iOS feature/screen manual-first. Skeleton-only tasks should not be treated as completed feature artifacts unless explicitly scoped as setup.
+Prefer feature milestones over day-by-day plans. For Tiempo iOS, each milestone should start from original Tiempo source behavior/syntax, then rebuild a working iOS feature/screen manual-first. Skeleton-only or permanently dummy behavior should not be treated as completed feature artifacts unless explicitly scoped as setup.
+
+Functional-basic rule:
+- Basic means the minimum professional foundation required for real app behavior, not toy/simple-only.
+- MVVM/ViewModel, Combine, concurrency/async-await, SwiftData, Speech/AVFoundation, and permissions can be basic when the current feature requires them.
+- Do not simplify away core product value just because the implementation sounds advanced.
+- Defer production-grade complexity, not useful feature behavior.
 
 Learning boundary rule:
-- Prototype drives the learning; learning must not delay the prototype.
+- Functional prototype drives the learning; learning must not delay the prototype.
 - Learn each concept only deep enough to explain, predict, and rebuild the behavior required by the current milestone.
-- Every milestone/session should define behavior target, required concepts, proof of understanding, out-of-scope topics, output, and stop rule/timebox.
+- Every milestone/session should define behavior target, real feature requirement, required concepts, proof of understanding, out-of-scope topics, output, and stop rule/timebox.
 - If a topic is interesting but not needed for the current prototype increment, place it in Parking Lot instead of blocking progress.
 
 Current milestone shape:
-- Phase 1 — Working Core Practice Flow: Home Feature, Practice Start Flow, Practice Timer, Pause/Resume/Stop, Practice Result Model, Recap Screen.
-- Phase 2 — Saved Practice: History List, Persistence.
-- Phase 3 — Speaking Coach Behavior: WPM/Pace, Speech/Audio, Permissions/Error States, Polish/Showcase MVP.
+- Phase 1 — App Entry and Practice Flow: Home Feature and State/Action Modeling, Practice Flow Navigation/Callback.
+- Phase 2 — Real Practice Session: Practice Session ViewModel + Timer/Controls, Audio Recording + Speech Transcript.
+- Phase 3 — Result and Feedback: Result Model + WPM/Filler From Transcript, Recap Screen.
+- Phase 4 — Saved Practice and Robust MVP: SwiftData History/Persistence, Permissions/Error States, Polish/Showcase MVP.
 
-Do not force MVVM, Clean Architecture, Coordinator, dependency injection, or advanced architecture patterns unless Fian explicitly chooses architecture/refactoring as the learning topic.
+Do not force Clean Architecture, Coordinator, dependency injection, or advanced architecture patterns unless Fian explicitly chooses architecture/refactoring as the learning topic. Basic MVVM/ViewModel is allowed when feature behavior needs state/logic separation.
 
 ## Current Rebuild Source
 
@@ -45,14 +52,14 @@ Original app:
 **Tiempo / Keynote Companion macOS** — a macOS public-speaking coach.
 
 Rebuild direction:
-**Tiempo iOS Rebuild** — an iOS reinterpretation focused on presentation-practice behavior, not a 1:1 macOS clone.
+**Tiempo iOS Rebuild** — an iOS reinterpretation focused on useful presentation-practice behavior, not a 1:1 macOS platform clone.
 
 Defer macOS-specific features unless explicitly chosen later:
 - Keynote automation,
 - AppleScript / Apple Events,
 - AppKit floating overlay/window management,
-- full speech/audio pipeline from day one,
-- complex SwiftData migration.
+- production-grade audio DSP / speech tuning,
+- complex SwiftData migration / CloudKit sync.
 
 ## Important Paths
 
@@ -211,7 +218,7 @@ Guiding questions should primarily come from the app being rebuilt.
 Preferred flow:
 
 ```text
-Original Tiempo feature/code → syntax/pattern study → iOS adaptation → manual-first rebuild → working feature artifact → mechanics explanation
+Original Tiempo feature/code → domain modeling → real feature requirement → syntax/pattern study → iOS adaptation → manual-first rebuild → working feature artifact → mechanics explanation
 ```
 
 Use Active Rebuild Questions first. Use Reference Bank only as supporting material.

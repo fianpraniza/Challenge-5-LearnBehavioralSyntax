@@ -9,6 +9,7 @@ Core idea:
 ```text
 Original Tiempo feature/code
 → domain modeling
+→ real feature requirement
 → syntax/pattern study
 → engineering tradeoff
 → iOS adaptation
@@ -20,7 +21,8 @@ Original Tiempo feature/code
 Learning boundary:
 ```text
 Learn only deep enough to explain, predict, and rebuild the behavior required by the prototype.
-Prototype drives the learning. Learning does not delay the prototype.
+Functional prototype drives the learning. Learning does not delay the prototype.
+Basic = minimum professional foundation required for real app behavior, not toy/simple-only.
 ```
 
 ## Two Types of Guiding Questions
@@ -60,6 +62,7 @@ Feature:
 
 ## Learning Boundary
 - Behavior Target:
+- Real Feature Requirement:
 - Required Concepts:
 - Must Understand:
 - Proof of Understanding: explain, predict, rebuild.
@@ -70,8 +73,9 @@ Feature:
 
 ## Deep behavior lens
 - Domain modeling: what real app situation is represented?
-- Representation: why this data/syntax shape?
-- Behavior: what changes when this value changes?
+- Real feature requirement: what useful behavior should not be dummy-replaced?
+- Representation: why this data/syntax/framework shape?
+- Behavior: what changes when this value/event changes?
 - Invariant / impossible state: what should never be allowed?
 - Tradeoff: what does original Tiempo choose, and what do we simplify?
 - Runtime: what is declared vs what executes?
@@ -104,21 +108,18 @@ Feature:
 
 ## Active Rebuild Questions
 - [[Active Rebuild Questions/00 - Tiempo iOS Rebuild Questions]]
-- [[Active Rebuild Questions/Milestone 1 - Home Feature Rebuild]]
+- [[Active Rebuild Questions/Milestone 1 - Home Feature and State Action Modeling]]
 - [[Active Rebuild Questions/Milestone 1A - Home Entry Flow]]
 - [[Active Rebuild Questions/Milestone 1B - Home State Drives UI]]
 - [[Active Rebuild Questions/Milestone 1C - Home Primary Action Behavior]]
-- [[Active Rebuild Questions/Milestone 2 - Practice Start Flow]]
-- [[Active Rebuild Questions/Milestone 3 - Practice Timer]]
-- [[Active Rebuild Questions/Milestone 4 - Pause Resume Stop Control]]
-- [[Active Rebuild Questions/Milestone 5 - Practice Result Model]]
+- [[Active Rebuild Questions/Milestone 2 - Practice Flow Navigation Callback]]
+- [[Active Rebuild Questions/Milestone 3 - Practice Session ViewModel Timer Controls]]
+- [[Active Rebuild Questions/Milestone 4 - Audio Recording Speech Transcript]]
+- [[Active Rebuild Questions/Milestone 5 - Result Model WPM Filler From Transcript]]
 - [[Active Rebuild Questions/Milestone 6 - Recap Screen]]
-- [[Active Rebuild Questions/Milestone 7A - History List]]
-- [[Active Rebuild Questions/Milestone 7B - Persistence]]
-- [[Active Rebuild Questions/Milestone 8A - WPM Pace Logic]]
-- [[Active Rebuild Questions/Milestone 8B - Speech Audio Pipeline]]
-- [[Active Rebuild Questions/Milestone 8C - Permissions Error States]]
-- [[Active Rebuild Questions/Milestone 8D - Polish Showcase MVP]]
+- [[Active Rebuild Questions/Milestone 7 - SwiftData History Persistence]]
+- [[Active Rebuild Questions/Milestone 8 - Permissions Error States]]
+- [[Active Rebuild Questions/Milestone 9 - Polish Showcase MVP]]
 
 ## Reference Bank
 - [[Reference Bank/01 - App Execution Lifecycle]]
@@ -133,10 +134,11 @@ Feature:
 - [[Reference Bank/10 - Programmatic App Building]]
 - [[Reference Bank/11 - Debugging Mechanics]]
 - [[Reference Bank/12 - Artifact Explanation]]
+- [[Reference Bank/13 - SwiftUI Syntax Starter Patterns]]
 
 ## Current Milestone Starting Point
 Start from:
-- [[Active Rebuild Questions/Milestone 1 - Home Feature Rebuild]]
+- [[Active Rebuild Questions/Milestone 1 - Home Feature and State Action Modeling]]
 
 Focus:
 ```text

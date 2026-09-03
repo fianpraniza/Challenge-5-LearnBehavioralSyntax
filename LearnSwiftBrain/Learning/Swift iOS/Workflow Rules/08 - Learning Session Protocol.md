@@ -33,6 +33,7 @@ Scope sesi ini:
 - Feature milestone:
 - Original Tiempo source to inspect:
 - Domain being modeled:
+- Real feature requirement:
 - Behavior to rebuild:
 - Syntax/pattern to study:
 - Engineering tradeoff to notice:
@@ -51,6 +52,7 @@ Scope sesi ini:
 - Feature milestone: Home Feature Rebuild.
 - Original Tiempo source to inspect: HomeViewState, HomeStatusContentView, HomeViewModel.
 - Domain being modeled: possible statuses of the practice/Home flow.
+- Real feature requirement: Home must feel like entry to a speaking-practice app, not a generic state demo.
 - Behavior to rebuild: Home state drives title/subtitle/button/action.
 - Syntax/pattern to study: enum, computed property, switch, Button action closure.
 - Engineering tradeoff to notice: simple `@State` now vs ViewModel later when behavior grows.
@@ -69,10 +71,10 @@ For Tiempo rebuild sessions, do not start from an isolated concept unless Fian e
 For every milestone session, Hermes must protect scope:
 
 ```text
-Learn only deep enough to explain, predict, and rebuild the behavior required by the prototype.
+Learn only deep enough to explain, predict, and rebuild the behavior required by the functional prototype.
 ```
 
-Before going deep, define what is out of scope. If a question is interesting but not required for the current feature output, put it in Parking Lot and continue the prototype.
+Before going deep, define what is out of scope. If a question is interesting but not required for the current feature output, put it in Parking Lot and continue the prototype. Do not replace core product value with dummy/manual behavior unless the milestone explicitly says it is a temporary scaffold.
 
 ## 3. Learn Phase
 Mentor menjelaskan konsep dengan format:

@@ -6,8 +6,9 @@ Template ini dipakai setiap kali Fian mulai sesi milestone Tiempo iOS, supaya AI
 Core rule:
 
 ```text
-Prototype drives the learning. Learning doesn't delay the prototype.
+Functional prototype drives the learning. Learning doesn't delay the prototype.
 Pelajari konsep hanya sedalam yang diperlukan untuk explain, predict, dan rebuild behavior milestone.
+Basic = fondasi minimum yang dibutuhkan untuk fitur real jalan, bukan versi toy/simple-only.
 ```
 
 ## How to Use
@@ -27,6 +28,9 @@ Sub-scope hari ini:
 
 Behavior Target:
 Apa behavior kecil yang mau dibuat/pahami hari ini?
+
+Real Feature Requirement:
+Core value apa dari app real yang tidak boleh di-dummy-kan?
 
 Original Tiempo Source:
 File original yang perlu dicek:
@@ -74,6 +78,9 @@ Milestone 1B — Home State Drives UI
 
 Behavior Target:
 Home title, subtitle, dan button berubah berdasarkan PracticeStatus.
+
+Real Feature Requirement:
+Home harus terasa seperti entry menuju speaking-practice app, bukan UI placeholder/state demo.
 
 Original Tiempo Source:
 - HomeViewState.swift
@@ -135,3 +142,5 @@ Ini menarik, tapi out of scope untuk milestone sekarang. Kita taruh Parking Lot 
 ```
 
 AI tidak boleh mengubah sesi milestone menjadi pembahasan teori panjang kecuali Fian eksplisit memilih concept-deep-dive mode.
+
+AI juga tidak boleh mengganti core value fitur menjadi dummy/manual version tanpa menyebut itu temporary scaffold dan tanpa approval Fian.
